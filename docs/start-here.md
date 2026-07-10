@@ -10,6 +10,7 @@
 | BepInEx / Harmony behaviour | [Code mods](mod-code/bepinex-harmony-and-data.md) | Windows H3VR-Mods |
 | Generated pools / profiles | [Data mods](mod-code/bepinex-harmony-and-data.md) | Windows staging + runtime registry |
 | GunGame map or pool | [GunGame](gungame/overview.md) | Correct branch + runtime test |
+| Supply Raid map/content | [Supply Raid](supply-raid/overview.md) | Supply Raid runtime test |
 | Thunderstore package | [Release](releases/thunderstore.md) | Verified package |
 
 ~~~mermaid
@@ -20,6 +21,7 @@ flowchart TD
   choose -->|Gun / item| weapon[Weapon guide]
   choose -->|Code / data| code[H3VR-Mods]
   choose -->|GunGame| game[GunGame guide]
+  choose -->|Supply Raid| supplyraid[Supply Raid guide]
   choose -->|Release| release[Release guide]
 ~~~
 
@@ -37,4 +39,3 @@ flowchart TD
 - [Navigation index](navigation/index.md)
 - [How to use the handbook](using-the-handbook.md)
 - [H3VR Modding Wiki source](../references/H3VR-Modding/wiki)
-

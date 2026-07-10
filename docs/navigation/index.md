@@ -16,6 +16,7 @@
 | Weapons | [Unity → OtherLoader → Mason](../weapons/custom-weapons-stratum-mason.md) |
 | Code + data | [BepInEx / Harmony / generators](../mod-code/bepinex-harmony-and-data.md) |
 | GunGame | [Overview](../gungame/overview.md) · [Maps](../gungame/map-authoring.md) · [Pools](../gungame/weapon-pools.md) |
+| Supply Raid | [Overview](../supply-raid/overview.md) · [Map authoring](../supply-raid/map-authoring.md) |
 | Release | [Package → test → release](../releases/thunderstore.md) |
 
 ## Reference shelves
@@ -26,5 +27,6 @@
 | Mason / Stratum / OtherLoader | [Mason](../../references/H3VR-Modding/Mason) · [Stratum](../../references/H3VR-Modding/Stratum) · [OtherLoader](../../references/devyndamonster/OtherLoader) |
 | Maps | [WurstMod](../../references/Nolenz/WurstMod) · [Atlas samples](../../references/H3VR-Modding/AtlasSampleScenes) |
 | GunGame | [Project](../../references/KacperObara/H3VR-GunGame) · [Wiki](../../references/KacperObara/H3VR-GunGame.wiki) |
+| Supply Raid | [SRE 1.3.0 source](../../references/Packer/H3VR-Supply-Raid-SRE-1.3.0) |
 | Creator examples | [Packer](../../references/Packer) · [cityrobo](../../references/cityrobo) |
 | All 27 pins | [Manifest](../../references/manifest.json) |

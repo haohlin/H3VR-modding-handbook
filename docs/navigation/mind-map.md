@@ -39,6 +39,11 @@ flowchart LR
   gungame --> pools[Weapon pools]
   gungame --> progression[Progression and demotion]
 
+  handbook --> supplyraid[Supply Raid]
+  supplyraid --> srEditor[Editor and SDK]
+  supplyraid --> srMap[Map authoring]
+  supplyraid --> srTest[Supply Raid runtime test]
+
   handbook --> release[Release]
   release --> logs[Runtime logs]
   release --> vrtest[VR test]
@@ -49,4 +54,3 @@ flowchart LR
   sources --> cards[External source cards]
   sources --> git[27 pinned Git submodules]
 ~~~
-

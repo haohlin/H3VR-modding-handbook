@@ -9,6 +9,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -112,7 +113,7 @@ def verify_handbook_links() -> list[str]:
         text = document.read_text(encoding="utf-8")
         links = re.findall(r"\[[^\]]+\]\(([^)]+)\)", text)
         for link in links:
-            target = link.split("#", 1)[0]
+            target = unquote(link.split("#", 1)[0])
             if not target or "://" in target or target.startswith("mailto:"):
                 continue
             path = (document.parent / target).resolve()

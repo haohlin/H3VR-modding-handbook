@@ -18,6 +18,7 @@
 | Make a gun or item | [Custom weapons](docs/weapons/custom-weapons-stratum-mason.md) |
 | Write code or generate data | [BepInEx + data](docs/mod-code/bepinex-harmony-and-data.md) |
 | Work on GunGame | [GunGame](docs/gungame/overview.md) |
+| Make a Supply Raid map | [Supply Raid](docs/supply-raid/overview.md) |
 | Package a release | [Release flow](docs/releases/thunderstore.md) |
 
 ## Online or local

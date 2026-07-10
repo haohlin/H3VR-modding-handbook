@@ -8,6 +8,7 @@
 | External links | [Collected resources](external/collected-resources.md) |
 | Legacy TextMesh Pro | [TextMesh Pro card](external/textmesh-pro-unity-5-6.md) |
 | FTW tutorial search | [FTW card](external/ftw-arms-custom-weapons.md) |
+| Supply Raid / SRE 1.3.0 | [Supply Raid card](external/supply-raid.md) |
 
 ## Raw upstream docs
 
@@ -17,4 +18,3 @@
 | Mason | [Mason docs](../../references/H3VR-Modding/Mason/docs/src) |
 | GunGame maps | [GunGame wiki](../../references/KacperObara/H3VR-GunGame.wiki) |
 | Legacy maps | [WurstMod](../../references/Nolenz/WurstMod) |
-
