@@ -1,0 +1,81 @@
+[submodule "Packer-H3VR-Supply-Raid-SRE-1.3.0"]
+	path = references/Packer/H3VR-Supply-Raid-SRE-1.3.0
+	url = https://github.com/Packer/H3VR-Supply-Raid.git
+[submodule "Packer-H3VR-Teams-Game-Mode"]
+	path = references/Packer/H3VR-Teams-Game-Mode
+	url = https://github.com/Packer/H3VR-Teams-Game-Mode.git
+[submodule "cityrobo-H3VR_Mods"]
+	path = references/cityrobo/H3VR_Mods
+	url = https://github.com/cityrobo/H3VR_Mods.git
+[submodule "cityrobo-OpenScripts2"]
+	path = references/cityrobo/OpenScripts2
+	url = https://github.com/cityrobo/OpenScripts2.git
+[submodule "cityrobo-PrefabLoader"]
+	path = references/cityrobo/PrefabLoader
+	url = https://github.com/cityrobo/PrefabLoader.git
+[submodule "cityrobo-H3VR-UnityHelperScripts"]
+	path = references/cityrobo/H3VR-UnityHelperScripts
+	url = https://github.com/cityrobo/H3VR-UnityHelperScripts.git
+[submodule "cityrobo-MagazinePatcher"]
+	path = references/cityrobo/MagazinePatcher
+	url = https://github.com/cityrobo/MagazinePatcher.git
+[submodule "H3VR-Modding-Sodalite"]
+	path = references/H3VR-Modding/Sodalite
+	url = https://github.com/H3VR-Modding/Sodalite.git
+[submodule "H3VR-Modding-Stratum"]
+	path = references/H3VR-Modding/Stratum
+	url = https://github.com/H3VR-Modding/Stratum.git
+[submodule "H3VR-Modding-Newtonsoft.Json"]
+	path = references/H3VR-Modding/Newtonsoft.Json
+	url = https://github.com/H3VR-Modding/Newtonsoft.Json.git
+[submodule "H3VR-Modding-Mason"]
+	path = references/H3VR-Modding/Mason
+	url = https://github.com/H3VR-Modding/Mason.git
+[submodule "H3VR-Modding-Mason-References"]
+	path = references/H3VR-Modding/Mason-References
+	url = https://github.com/H3VR-Modding/Mason-References.git
+[submodule "H3VR-Modding-Mason-Quickstart"]
+	path = references/H3VR-Modding/Mason-Quickstart
+	url = https://github.com/H3VR-Modding/Mason-Quickstart.git
+[submodule "H3VR-Modding-wiki"]
+	path = references/H3VR-Modding/wiki
+	url = https://github.com/H3VR-Modding/wiki.git
+[submodule "H3VR-Modding-Deliter"]
+	path = references/H3VR-Modding/Deliter
+	url = https://github.com/H3VR-Modding/Deliter.git
+[submodule "H3VR-Modding-Atlas"]
+	path = references/H3VR-Modding/Atlas
+	url = https://github.com/H3VR-Modding/Atlas.git
+[submodule "H3VR-Modding-MeatKit"]
+	path = references/H3VR-Modding/MeatKit
+	url = https://github.com/H3VR-Modding/MeatKit.git
+[submodule "H3VR-Modding-AtlasSampleScenes"]
+	path = references/H3VR-Modding/AtlasSampleScenes
+	url = https://github.com/H3VR-Modding/AtlasSampleScenes.git
+[submodule "H3VR-Modding-H3VRPluginTemplate"]
+	path = references/H3VR-Modding/H3VRPluginTemplate
+	url = https://github.com/H3VR-Modding/H3VRPluginTemplate.git
+[submodule "H3VR-Modding-docs"]
+	path = references/H3VR-Modding/docs
+	url = https://github.com/H3VR-Modding/docs.git
+[submodule "H3VR-Modding-TakeAndHoldFramework"]
+	path = references/H3VR-Modding/TakeAndHoldFramework
+	url = https://github.com/H3VR-Modding/TakeAndHoldFramework.git
+[submodule "H3VR-Modding-OtherLoader"]
+	path = references/H3VR-Modding/OtherLoader
+	url = https://github.com/H3VR-Modding/OtherLoader.git
+[submodule "devyndamonster-OtherLoader"]
+	path = references/devyndamonster/OtherLoader
+	url = https://github.com/devyndamonster/OtherLoader.git
+[submodule "KacperObara-H3VR-GunGame"]
+	path = references/KacperObara/H3VR-GunGame
+	url = https://github.com/KacperObara/H3VR-GunGame.git
+[submodule "KacperObara-H3VR-GunGame.wiki"]
+	path = references/KacperObara/H3VR-GunGame.wiki
+	url = https://github.com/KacperObara/H3VR-GunGame.wiki.git
+[submodule "Nolenz-WurstMod"]
+	path = references/Nolenz/WurstMod
+	url = https://github.com/Nolenz/WurstMod.git
+[submodule "Josh015-Alloy"]
+	path = references/Josh015/Alloy
+	url = https://github.com/Josh015/Alloy.git
