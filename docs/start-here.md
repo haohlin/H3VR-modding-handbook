@@ -1,34 +1,40 @@
 # Start Here
 
-## Use this route when
+## Choose the deliverable
 
-Choose the route by the deliverable you are changing, not by which tutorial you
-saw first.
-
-| You want to change | Start with | Finish in |
+| Deliverable | Route | Finish on |
 | --- | --- | --- |
-| A scene, prefab, material, mesh, texture, audio, or MonoBehaviour | [Unity and MeatKit flow](development-flow.md) | Windows MeatKit-Lite and an in-game test |
-| A map, Take and Hold layout, lighting, or navigation | [Map overview](maps/overview.md) | Windows Unity plus VR performance test |
-| A custom firearm or item | [Custom weapons](weapons/custom-weapons-stratum-mason.md) | Windows Unity, loader/package validation, VR interaction test |
-| A BepInEx or Harmony behaviour change | [Code and data mods](mod-code/bepinex-harmony-and-data.md) | Windows H3VR-Mods build, package, deploy, log, and VR test |
-| Generated mode data or loadout pools | [Code and data mods](mod-code/bepinex-harmony-and-data.md) | Windows staging output and active-registry validation |
-| A GunGame map or progression pool | [GunGame overview](gungame/overview.md) | Correct map/pool route, then Windows runtime validation |
-| A Thunderstore release | [Release flow](releases/thunderstore.md) | Verified package and explicit publish approval |
+| Scene, prefab, material, mesh, audio, MonoBehaviour | [Unity / MeatKit flow](development-flow.md) | Windows MeatKit-Lite |
+| Map, T&H layout, lighting, navmesh | [Maps](maps/overview.md) | Windows Unity + VR |
+| Firearm or item | [Custom weapons](weapons/custom-weapons-stratum-mason.md) | Unity + loader/package + VR |
+| BepInEx / Harmony behaviour | [Code mods](mod-code/bepinex-harmony-and-data.md) | Windows H3VR-Mods |
+| Generated pools / profiles | [Data mods](mod-code/bepinex-harmony-and-data.md) | Windows staging + runtime registry |
+| GunGame map or pool | [GunGame](gungame/overview.md) | Correct branch + runtime test |
+| Thunderstore package | [Release](releases/thunderstore.md) | Verified package |
 
-## First checks
+~~~mermaid
+flowchart TD
+  choose{What changes?}
+  choose -->|Unity object / content| unity[MeatKit-Lite]
+  choose -->|Map| maps[Map guide]
+  choose -->|Gun / item| weapon[Weapon guide]
+  choose -->|Code / data| code[H3VR-Mods]
+  choose -->|GunGame| game[GunGame guide]
+  choose -->|Release| release[Release guide]
+~~~
 
-1. Identify the source repository that owns the change.
-2. Keep the Windows workspace authoritative for every edit that affects H3VR
-   runtime behaviour.
-3. Read the corresponding raw upstream documentation below references/ before
-   changing a compatibility-sensitive object, loader, or package.
-4. Treat successful compilation as one verification layer, not proof of correct
-   in-game or VR behaviour.
+## Always do this
+
+1. **Read** the route guide and its primary references.
+2. **Edit** the authoritative Windows project.
+3. **Build / package** with that project's workflow.
+4. **Test** in H3VR; inspect logs.
+5. **Commit** source, metadata, and docs — never caches or generated artifacts.
 
 ## Primary references
 
-- [Development flow](development-flow.md)
+- [Development Flow](development-flow.md)
 - [Navigation index](navigation/index.md)
+- [How to use the handbook](using-the-handbook.md)
 - [H3VR Modding Wiki source](../references/H3VR-Modding/wiki)
-- [Source archive](sources/)
 

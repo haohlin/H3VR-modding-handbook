@@ -1,29 +1,25 @@
-# Package, Test, and Release
+# Package → Test → Release
 
-## Use this route when
+~~~mermaid
+flowchart LR
+  source[Committed source] --> test[Test + verify]
+  test --> package[Build package]
+  package --> deploy[Deploy]
+  deploy --> vr[VR test + logs]
+  vr --> publish[Explicit publish approval]
+~~~
 
-You have a candidate mod or content package that needs repeatable verification
-before a Thunderstore release.
-
-## Release checklist
-
-1. Commit only intentional source, metadata, and documentation changes.
-2. Run the repository tests and type-specific validation in the authoritative
-   Windows environment.
-3. Build and package with the established wrapper/toolchain. Inspect the package
-   manifest, README, icon, dependency metadata, and payload layout.
-4. Deploy only the successfully packaged artifact through the supported deploy
-   flow.
-5. Ask a VR tester to exercise the actual interaction. Review BepInEx and Unity
-   errors after the test.
-6. Publish only with explicit user authorization and an approved VR result where
-   the package workflow requires it.
-7. Record the final package version, commit, checksum/receipt, and known
-   dependencies in the release notes.
+| Gate | Must be true |
+| --- | --- |
+| Source | Intentional files only |
+| Package | Manifest, README, icon, payload, dependencies correct |
+| Deploy | Installed through supported workflow |
+| Runtime | Interaction works; logs are clean |
+| Publish | User explicitly approves release |
 
 ## Primary references
 
-- [Development flow](../development-flow.md)
-- [H3VR Modding Wiki Thunderstore source](../../references/H3VR-Modding/wiki/src/creating/thunderstore)
-- [Mason packaging source](../../references/H3VR-Modding/Mason/docs/src/getting_started/packaging.md)
+- [Development Flow](../development-flow.md)
+- [H3VR Modding Wiki: Thunderstore](../../references/H3VR-Modding/wiki/src/creating/thunderstore)
+- [Mason packaging](../../references/H3VR-Modding/Mason/docs/src/getting_started/packaging.md)
 

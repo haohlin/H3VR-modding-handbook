@@ -1,28 +1,24 @@
-# GunGame Overview
+# GunGame
 
-## Use this route when
+**Rule:** kills advance the weapon; death demotes the weapon.
 
-You are working on GunGame progression, its map requirements, or its weapon
-pools.
+~~~mermaid
+flowchart LR
+  gungame[GunGame] --> map[Map route]
+  gungame --> pools[Weapon-pool route]
+  map --> vr[Runtime test]
+  pools --> registry[Active registry validation]
+~~~
 
-## Mode contract
-
-GunGame advances the player through weapons as kills are earned. Death demotes
-the player to an earlier weapon. This makes both map flow and pool composition
-part of the game-mode balance.
-
-## Choose the correct branch
-
-- For a GunGame-compatible map, use [Map authoring](map-authoring.md).
-- For weapons/progression data, use [Weapon pools](weapon-pools.md).
-- For a general Unity scene or Take and Hold map, use the separate
-  [map overview](../maps/overview.md).
-- For the existing local generator, follow the Windows-authoritative data-mod
-  workflow, not this macOS reference repository.
+| Change | Open |
+| --- | --- |
+| Map layout, spawns, gameplay space | [Map authoring](map-authoring.md) |
+| Progression weapons / generated data | [Weapon pools](weapon-pools.md) |
+| General H3VR map | [Map overview](../maps/overview.md) |
 
 ## Primary references
 
-- [Raw GunGame notes](../sources/user-provided/2026-07-10-gungame-notes.md)
+- [Raw GunGame note](../sources/user-provided/2026-07-10-gungame-notes.md)
 - [GunGame project](../../references/KacperObara/H3VR-GunGame)
 - [GunGame map wiki](../../references/KacperObara/H3VR-GunGame.wiki)
 

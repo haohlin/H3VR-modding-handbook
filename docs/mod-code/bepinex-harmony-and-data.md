@@ -1,35 +1,31 @@
-# BepInEx, Harmony, and Data Mods
+# BepInEx, Harmony + Data
 
-## Use this route when
+~~~mermaid
+flowchart LR
+  change[Code / data change] --> api[Check live API / registry]
+  api --> build[Build + package]
+  build --> deploy[Deploy with wrapper]
+  deploy --> vr[VR test + logs]
+~~~
 
-You are creating a code plugin, patching an H3VR method, or generating runtime
-data such as progression pools.
+| Work | Required checks |
+| --- | --- |
+| **Harmony / code** | Live signature, registered target, build, package, deploy, logs |
+| **Data generator** | Explicit seed, staging output, IDs/invariants, active registry |
+| **Both** | Windows authoritative workflow + runtime test |
 
-## Code-plugin checklist
+## Do / do not
 
-1. Work in the Windows H3VR-Mods repository on a focused feature branch.
-2. Run the local preflight and confirm the decompiled source cache matches the
-   live managed assemblies before selecting a Harmony target.
-3. Inspect the target signature from the generated read-only source cache.
-4. Register every patch target in the build registry so verification catches
-   game API drift.
-5. Build, package, and deploy through the Windows wrapper. Do not copy DLLs
-   directly into a profile.
-6. VR-test the behaviour and inspect BepInEx logs before considering the change
-   ready.
-
-## Data-generator checklist
-
-1. Make generation deterministic with an explicit seed.
-2. Write output to staging, not tracked package source.
-3. Validate generated IDs and invariants with repository tests.
-4. Package through the normal wrapper and validate runtime data against active
-   registries.
+| ✅ | ❌ |
+| --- | --- |
+| Use the Windows wrapper | Copy DLLs into a profile |
+| Check game API before patching | Trust stale decompiled source |
+| Generate into staging | Mutate tracked release data |
+| Validate live registry | Assume installed = enabled |
 
 ## Primary references
 
-- [Development flow](../development-flow.md)
-- [H3VR Plugin Template](../../references/H3VR-Modding/H3VRPluginTemplate)
-- [H3VR Modding Wiki scripting source](../../references/H3VR-Modding/wiki/src/creating/scripting)
-- [GunGame weapon pools](../gungame/weapon-pools.md)
+- [Development Flow](../development-flow.md)
+- [Plugin template](../../references/H3VR-Modding/H3VRPluginTemplate)
+- [GunGame pools](../gungame/weapon-pools.md)
 
