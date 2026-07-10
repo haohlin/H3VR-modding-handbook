@@ -24,8 +24,9 @@ reviewable stages:
    Markdown and turn it into navigable map-authoring, performance, and VR-test
    checklists.
 3. Add concise route guides for BepInEx/Harmony, data mods, MeatKit/Unity
-   content, maps, Thunderstore releases, and troubleshooting. Each guide links
-   to the authoritative source material and the relevant reference projects.
+   content, custom weapons, Stratum/Mason, maps, GunGame, Thunderstore releases,
+   and troubleshooting. Each guide links to the authoritative source material
+   and the relevant reference projects.
 4. Maintain the handbook as new projects and releases are added; the handbook
    is not a substitute for current upstream documentation or real VR testing.
 
@@ -40,6 +41,8 @@ H3VR-modding-handbook/
 │   ├── development-flow.md
 │   ├── maps/
 │   ├── unity-meatkit/
+│   ├── weapons/
+│   ├── gungame/
 │   ├── mod-code/
 │   ├── releases/
 │   ├── troubleshooting/
@@ -48,6 +51,8 @@ H3VR-modding-handbook/
 ├── references/                       # independently versioned Git submodules
 │   ├── H3VR-Modding/
 │   │   └── wiki/                     # source of h3vr-modding.github.io/wiki
+│   ├── KacperObara/
+│   │   └── H3VR-GunGame.wiki/         # Git source of GunGame map tutorial
 │   ├── Packer/
 │   └── cityrobo/
 └── docs/superpowers/                 # design and implementation records
@@ -77,6 +82,57 @@ publisher, access date, intended use, and any known license or access warning.
 The linked Unity 5.6 TextMesh Pro package is therefore catalogued as a source,
 not redistributed from this repository.
 
+## Custom weapons, Stratum, Mason, and GunGame sources
+
+The handbook will add two focused routes.
+
+### Custom weapons and packaging
+
+`docs/weapons/custom-weapons-stratum-mason.md` will describe the user's
+suggested route as an ordered, version-labelled checklist:
+
+1. Create and implement the gun in Unity using the custom-weapon tutorial
+   linked by the H3VR Modding Wiki.
+2. Configure the asset bundles for OtherLoader on-demand loading when the mod
+   needs that loading model.
+3. Compile and package using Mason's preparation, compilation, asset, and
+   packaging documentation.
+
+The H3VR Modding Wiki currently labels its OtherLoader/Mason packaging links as
+legacy. The handbook therefore must state the exact Mason and Stratum version
+for which a workflow was verified, link to the current Mason source, and never
+silently treat a legacy procedure as the current release path. The three
+user-supplied Google Docs are indexed as external source cards. They are not
+copied into the handbook without redistribution permission.
+
+An online search did not identify a direct, independently verifiable "FTW Arms
+Custom Weapons tutorial" URL. The source card records that result, points to
+the custom-weapon tutorial that the H3VR Modding Wiki actually links, and can
+be upgraded if a direct FTW Arms source URL is later supplied.
+
+### GunGame
+
+`docs/gungame/` will separate game-mode context, map authoring, weapon-pool
+authoring, and the local GunGameProgressions development flow. It will retain
+the user-provided mode description: player kills progress through weapons and
+death demotes the player. The KacperObara GunGame wiki is added as a pinned
+submodule because GitHub wikis are Git repositories; the supplied weapon-pool
+Google Doc is an attributed source card. This route cross-links the Windows
+authoritative GunGameProgressions source and makes clear that generated pools
+must be validated against the player's actual installed content.
+
+The source inventory will include these exact upstream entries:
+
+| Topic | Source |
+| --- | --- |
+| Mason documentation | `https://h3vr-modding.github.io/Mason/` and the `H3VR-Modding/Mason` submodule |
+| OtherLoader on-demand loading | `https://github.com/devyndamonster/OtherLoader/wiki/Building-Mods-For-On-Demand-Loading` |
+| GunGame map tutorial | `https://github.com/KacperObara/H3VR-GunGame/wiki/Map-making-Tutorial` and the matching `.wiki.git` submodule |
+| GunGame weapon pools | `https://docs.google.com/document/d/1QlgTxTHH6X-kRL-iym6_Q85BahqY2yBLZxHDJLtYkX4/edit` |
+| User-supplied companion tutorial 1 | `https://docs.google.com/document/d/1bF66Tijdf5mwTXuIPWmnszSNMJ8u7Wxza9_PshheB2A/edit?tab=t.0#heading=h.im2jb6itwtrn` |
+| User-supplied companion tutorial 2 | `https://docs.google.com/document/d/1DBrf71Lc8SAAlrHLuauq05LVkY8_P9VDsaixhhI55Xk/edit?tab=t.0` |
+| User-supplied companion tutorial 3 | `https://docs.google.com/document/d/1sADJ-wmB0HYgY0kv44gt5ICAXejvUt1vnlCMC5KwXJk/edit?tab=t.0` |
+
 ## Development flow documentation
 
 The entry guides must clearly distinguish these routes:
@@ -92,6 +148,11 @@ The entry guides must clearly distinguish these routes:
 - Maps: use the WurstMod/H3VR mapping source as a reference, with authored
   guides covering hierarchy, colliders, lighting, occlusion, navmesh, audio,
   profiling, and in-game VR validation.
+- Custom weapons: separate the Unity implementation phase from the loader and
+  packaging phase; capture the Mason/Stratum version that the packaging guide
+  applies to.
+- GunGame: distinguish map requirements from deterministic weapon-pool
+  generation and test pools against active registries in the Windows runtime.
 
 ## Failure handling and verification
 
@@ -112,10 +173,12 @@ authoritative Windows workflows.
 - A private `h3vr-modding/H3VR-modding-handbook` GitHub repository exists and has a
   clear README, source policy, and onboarding path.
 - All 22 existing reference clones are represented as clean, pinned submodules
-  under `references/`; `H3VR-Modding/wiki` is included.
+  under `references/`; `H3VR-Modding/wiki` is included. The GunGame wiki is
+  added as one additional pinned reference submodule.
 - The user-supplied Prometheus material and resource list are preserved with
   clear provenance, and the map guide links back to it.
 - The repository says exactly where to edit Unity content, build a mod, and
-  VR-test it, avoiding any claim that the handbook itself is buildable.
+  VR-test it, including the custom-weapon/Stratum/Mason and GunGame routes,
+  without any claim that the handbook itself is buildable.
 - No production H3VR, Unity, Steam, r2modman, secrets, generated artifacts, or
   third-party binary assets are copied into the handbook.
