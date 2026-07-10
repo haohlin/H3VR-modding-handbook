@@ -1,6 +1,6 @@
 # H3VR Modding Handbook Foundation Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Build and publish a private H3VR modding handbook with pinned source references, direct documentation routes, and a visual index.
 
@@ -40,7 +40,7 @@
 
 **Interfaces:** `references/manifest.json` has a top-level `submodules` array. Each element has string keys `path`, `url`, and `requestedRef`.
 
-- [ ] **Step 1: Write the failing manifest test**
+- [x] **Step 1: Write the failing manifest test**
 
 ```python
 import json
@@ -58,17 +58,17 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-- [ ] **Step 2: Run the test before the manifest exists**
+- [x] **Step 2: Run the test before the manifest exists**
 
 Run: `python3 -m unittest tests/test_reference_manifest.py -v`
 
 Expected: `FileNotFoundError` for `references/manifest.json`.
 
-- [ ] **Step 3: Create the manifest and top-level documents**
+- [x] **Step 3: Create the manifest and top-level documents**
 
 Create a private-reference README with `git clone --recurse-submodules`, a `SOURCES.md` defining source classes, and a `.gitignore` limited to macOS/Python noise. Use the exact 27 source paths and URLs in the approved design spec. Use `SRE-1.3.0` as the Supply Raid requested ref and `default` for every other source.
 
-- [ ] **Step 4: Run the test and commit**
+- [x] **Step 4: Run the test and commit**
 
 Run: `python3 -m unittest tests/test_reference_manifest.py -v`
 
@@ -89,13 +89,13 @@ git commit -m "docs: establish handbook source manifest"
 
 **Interfaces:** Reads `references/manifest.json`; produces all 27 paths as initialized submodules at pinned commits.
 
-- [ ] **Step 1: Validate the existing 22 clones before moving them**
+- [x] **Step 1: Validate the existing 22 clones before moving them**
 
 Run `git -C <clone> status --porcelain` and `git -C <clone> remote get-url origin` for every existing clone.
 
 Expected: all status commands are empty and each normalized origin matches its manifest URL.
 
-- [ ] **Step 2: Move the owner directories and register the existing clones in place**
+- [x] **Step 2: Move the owner directories and register the existing clones in place**
 
 Run:
 
@@ -106,11 +106,11 @@ mv Packer cityrobo H3VR-Modding references/
 
 For every moved manifest entry, run `git submodule add --force --name <unique-name> <url> <path>`. Before registering Supply Raid, run `git -C references/Packer/H3VR-Supply-Raid-SRE-1.3.0 describe --exact-match --tags` and require `SRE-1.3.0`.
 
-- [ ] **Step 3: Add missing sources**
+- [x] **Step 3: Add missing sources**
 
 Run `git submodule add --depth 1` for devyndamonster/OtherLoader, KacperObara/H3VR-GunGame, KacperObara/H3VR-GunGame.wiki, Nolenz/WurstMod, and Josh015/Alloy. Do not enable LFS smudging.
 
-- [ ] **Step 4: Check and commit the gitlinks**
+- [x] **Step 4: Check and commit the gitlinks**
 
 Run: `git submodule status --recursive && git diff --check`
 
@@ -133,15 +133,15 @@ git commit -m "chore: add H3VR modding references"
 
 **Interfaces:** Each source document begins with `Source:`, `Provided by:`, `Captured:`, and `Redistribution:`. Raw user files retain the supplied notes; external cards contain URLs and short original summaries, not copied third-party prose.
 
-- [ ] **Step 1: Preserve user-provided source material verbatim**
+- [x] **Step 1: Preserve user-provided source material verbatim**
 
 Write the collected Prometheus map notes, hierarchy/performance topics, resource list, custom weapon/Stratum/Mason explanation, GunGame description, and all supplied URLs into the three user-provided Markdown files.
 
-- [ ] **Step 2: Create source cards for every linked external resource**
+- [x] **Step 2: Create source cards for every linked external resource**
 
 Index TextMesh Pro, WurstMod, BepInEx, SteamVR frame timing, Alloy, lighting resources, Mason, OtherLoader, GunGame, the three custom-weapon Google Docs, and the GunGame weapon-pool Google Doc. Record incomplete ManlyMarco and FTW references exactly as supplied; state that no direct FTW tutorial URL was verified.
 
-- [ ] **Step 3: Validate source headers and commit**
+- [x] **Step 3: Validate source headers and commit**
 
 Run: `for f in docs/sources/**/*.md; do for header in 'Source:' 'Provided by:' 'Captured:' 'Redistribution:'; do rg -q "^$header" "$f" || exit 1; done; done; git diff --check`
 
@@ -162,19 +162,19 @@ git commit -m "docs: archive modding source material"
 
 **Interfaces:** Every guide contains `## Use this route when`, an ordered checklist, and `## Primary references` pointing to source cards or raw Git documentation.
 
-- [ ] **Step 1: Write start and development-flow guidance**
+- [x] **Step 1: Write start and development-flow guidance**
 
 Route Unity items, maps, BepInEx/Harmony code, data generators, and GunGame work to the appropriate guide. State that all implementation, build, packaging, deployment, log review, and VR validation happen in the Windows-authoritative workspaces.
 
-- [ ] **Step 2: Write maps and performance guides**
+- [x] **Step 2: Write maps and performance guides**
 
 Organize the supplied Prometheus material into hierarchy, Take & Hold setup, colliders, PMat, lighting, reflection/light probes, occlusion, navmesh, audio, custom scripts, profiling, and VR testing.
 
-- [ ] **Step 3: Write the weapons and GunGame guides**
+- [x] **Step 3: Write the weapons and GunGame guides**
 
 Separate Unity implementation, OtherLoader on-demand assets, and Mason/Stratum packaging. Require a named tool version because the maintained wiki labels its packaging links legacy. For GunGame, separate map work from deterministic weapon-pool generation and require live-registry validation on Windows.
 
-- [ ] **Step 4: Validate guide structure and commit**
+- [x] **Step 4: Validate guide structure and commit**
 
 Run: `for f in docs/start-here.md docs/development-flow.md docs/maps/*.md docs/weapons/*.md docs/gungame/*.md; do rg -q '^## Primary references' "$f" || exit 1; done`
 
@@ -193,11 +193,11 @@ git commit -m "docs: add H3VR modding routes"
 
 **Interfaces:** The index has direct links for every route and reference owner. The graph is a GitHub-renderable Mermaid `flowchart LR` rooted at `H3VR Modding Handbook`.
 
-- [ ] **Step 1: Write the text-first index**
+- [x] **Step 1: Write the text-first index**
 
 Group direct relative links under Start, Unity/MeatKit, Weapons, Maps, Code/Data, GunGame, Release, Sources, and Reference Repositories.
 
-- [ ] **Step 2: Write the Mermaid graph**
+- [x] **Step 2: Write the Mermaid graph**
 
 Use this required root and branches, then connect each to its guide and primary reference category:
 
@@ -213,7 +213,7 @@ flowchart LR
   handbook --> sources[Sources and references]
 ```
 
-- [ ] **Step 3: Commit the navigation documents**
+- [x] **Step 3: Commit the navigation documents**
 
 Run: `git diff --check && git add docs/navigation && git commit -m "docs: add handbook navigation map"`
 
@@ -227,15 +227,15 @@ Expected: Git records the index and graph with no whitespace errors.
 
 **Interfaces:** `python3 scripts/verify_handbook.py [--links-only]` exits `0` only when the 27-entry manifest, `.gitmodules`, clean initialized submodules, and index relative links agree.
 
-- [ ] **Step 1: Extend tests for required special sources**
+- [x] **Step 1: Extend tests for required special sources**
 
 Assert that the manifest contains `SRE-1.3.0`, both OtherLoader paths, `H3VR-GunGame.wiki`, `Nolenz/WurstMod`, and `Josh015/Alloy`.
 
-- [ ] **Step 2: Implement the verifier**
+- [x] **Step 2: Implement the verifier**
 
 Implement `load_manifest()`, `load_gitmodules()`, `verify_manifest()`, `verify_submodules()`, and `verify_navigation_links()` using only `json`, `pathlib`, `subprocess`, `re`, and `argparse`. Normalize only a terminal `.git` when comparing remotes; collect all errors before returning non-zero; never fetch network resources.
 
-- [ ] **Step 3: Run verification and commit**
+- [x] **Step 3: Run verification and commit**
 
 ```bash
 python3 -m unittest tests/test_reference_manifest.py -v
@@ -248,7 +248,7 @@ git commit -m "test: verify handbook references"
 
 Expected: all verification commands exit `0`.
 
-- [ ] **Step 4: Fast-forward and publish**
+- [x] **Step 4: Fast-forward and publish**
 
 ```bash
 git switch main
