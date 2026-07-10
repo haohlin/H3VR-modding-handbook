@@ -1,0 +1,140 @@
+{
+  "submodules": [
+    {
+      "path": "references/Packer/H3VR-Supply-Raid-SRE-1.3.0",
+      "url": "https://github.com/Packer/H3VR-Supply-Raid.git",
+      "requestedRef": "SRE-1.3.0"
+    },
+    {
+      "path": "references/Packer/H3VR-Teams-Game-Mode",
+      "url": "https://github.com/Packer/H3VR-Teams-Game-Mode.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/cityrobo/H3VR_Mods",
+      "url": "https://github.com/cityrobo/H3VR_Mods.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/cityrobo/OpenScripts2",
+      "url": "https://github.com/cityrobo/OpenScripts2.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/cityrobo/PrefabLoader",
+      "url": "https://github.com/cityrobo/PrefabLoader.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/cityrobo/H3VR-UnityHelperScripts",
+      "url": "https://github.com/cityrobo/H3VR-UnityHelperScripts.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/cityrobo/MagazinePatcher",
+      "url": "https://github.com/cityrobo/MagazinePatcher.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/Sodalite",
+      "url": "https://github.com/H3VR-Modding/Sodalite.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/Stratum",
+      "url": "https://github.com/H3VR-Modding/Stratum.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/Newtonsoft.Json",
+      "url": "https://github.com/H3VR-Modding/Newtonsoft.Json.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/Mason",
+      "url": "https://github.com/H3VR-Modding/Mason.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/Mason-References",
+      "url": "https://github.com/H3VR-Modding/Mason-References.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/Mason-Quickstart",
+      "url": "https://github.com/H3VR-Modding/Mason-Quickstart.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/wiki",
+      "url": "https://github.com/H3VR-Modding/wiki.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/Deliter",
+      "url": "https://github.com/H3VR-Modding/Deliter.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/Atlas",
+      "url": "https://github.com/H3VR-Modding/Atlas.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/MeatKit",
+      "url": "https://github.com/H3VR-Modding/MeatKit.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/AtlasSampleScenes",
+      "url": "https://github.com/H3VR-Modding/AtlasSampleScenes.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/H3VRPluginTemplate",
+      "url": "https://github.com/H3VR-Modding/H3VRPluginTemplate.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/docs",
+      "url": "https://github.com/H3VR-Modding/docs.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/TakeAndHoldFramework",
+      "url": "https://github.com/H3VR-Modding/TakeAndHoldFramework.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/H3VR-Modding/OtherLoader",
+      "url": "https://github.com/H3VR-Modding/OtherLoader.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/devyndamonster/OtherLoader",
+      "url": "https://github.com/devyndamonster/OtherLoader.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/KacperObara/H3VR-GunGame",
+      "url": "https://github.com/KacperObara/H3VR-GunGame.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/KacperObara/H3VR-GunGame.wiki",
+      "url": "https://github.com/KacperObara/H3VR-GunGame.wiki.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/Nolenz/WurstMod",
+      "url": "https://github.com/Nolenz/WurstMod.git",
+      "requestedRef": "default"
+    },
+    {
+      "path": "references/Josh015/Alloy",
+      "url": "https://github.com/Josh015/Alloy.git",
+      "requestedRef": "default"
+    }
+  ]
+}
+
