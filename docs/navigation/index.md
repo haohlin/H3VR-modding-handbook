@@ -6,6 +6,7 @@ shows the same architecture visually.
 ## Start
 
 - [Choose a modding route](../start-here.md)
+- [How to use the handbook](../using-the-handbook.md)
 - [Development flow and environment boundary](../development-flow.md)
 - [Source archive](../sources/README.md)
 - [Source and attribution policy](../../SOURCES.md)
@@ -63,4 +64,3 @@ shows the same architecture visually.
 - [H3VR Unity Helper Scripts](../../references/cityrobo/H3VR-UnityHelperScripts)
 - [MagazinePatcher](../../references/cityrobo/MagazinePatcher)
 - [Complete 27-source manifest](../../references/manifest.json)
-

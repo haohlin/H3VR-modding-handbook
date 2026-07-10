@@ -38,7 +38,7 @@ objects.
 
 - [Map performance and VR testing](performance-and-vr-testing.md)
 - [Raw Prometheus notes](../sources/user-provided/2026-07-10-prometheus-map-modding-notes.md)
-- [H3VR Modding Wiki mapping source](../../../references/H3VR-Modding/wiki/src/creating/mapping)
-- [Atlas sample scenes](../../../references/H3VR-Modding/AtlasSampleScenes)
-- [WurstMod source](../../../references/Nolenz/WurstMod)
+- [H3VR Modding Wiki mapping source](../../references/H3VR-Modding/wiki/src/creating/mapping)
+- [Atlas sample scenes](../../references/H3VR-Modding/AtlasSampleScenes)
+- [WurstMod source](../../references/Nolenz/WurstMod)
 

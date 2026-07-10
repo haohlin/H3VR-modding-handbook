@@ -40,6 +40,6 @@ or is ready for an in-game validation pass.
 - [Map overview](overview.md)
 - [Raw Prometheus notes](../sources/user-provided/2026-07-10-prometheus-map-modding-notes.md)
 - [Collected external resources](../sources/external/collected-resources.md)
-- [Alloy source](../../../references/Josh015/Alloy)
-- [H3VR Modding Wiki mapping source](../../../references/H3VR-Modding/wiki/src/creating/mapping)
+- [Alloy source](../../references/Josh015/Alloy)
+- [H3VR Modding Wiki mapping source](../../references/H3VR-Modding/wiki/src/creating/mapping)
 

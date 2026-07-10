@@ -40,8 +40,8 @@ setup.
 ## Primary references
 
 - [Raw custom-weapons notes](../sources/user-provided/2026-07-10-custom-weapons-stratum-mason.md)
-- [OtherLoader source](../../../references/devyndamonster/OtherLoader)
-- [Mason raw documentation](../../../references/H3VR-Modding/Mason/docs/src)
-- [Stratum source](../../../references/H3VR-Modding/Stratum)
-- [H3VR Modding Wiki custom-object source](../../../references/H3VR-Modding/wiki/src/creating)
+- [OtherLoader source](../../references/devyndamonster/OtherLoader)
+- [Mason raw documentation](../../references/H3VR-Modding/Mason/docs/src)
+- [Stratum source](../../references/H3VR-Modding/Stratum)
+- [H3VR Modding Wiki custom-object source](../../references/H3VR-Modding/wiki/src/creating)
 

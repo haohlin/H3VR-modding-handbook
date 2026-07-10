@@ -29,6 +29,6 @@ saw first.
 
 - [Development flow](development-flow.md)
 - [Navigation index](navigation/index.md)
-- [H3VR Modding Wiki source](../../references/H3VR-Modding/wiki)
+- [H3VR Modding Wiki source](../references/H3VR-Modding/wiki)
 - [Source archive](sources/)
 

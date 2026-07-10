@@ -105,17 +105,20 @@ def verify_submodules(sources: list[dict[str, str]]) -> list[str]:
     return errors
 
 
-def verify_navigation_links() -> list[str]:
+def verify_handbook_links() -> list[str]:
     errors: list[str] = []
-    text = INDEX_PATH.read_text(encoding="utf-8")
-    links = re.findall(r"\[[^\]]+\]\(([^)]+)\)", text)
-    for link in links:
-        target = link.split("#", 1)[0]
-        if not target or "://" in target or target.startswith("mailto:"):
-            continue
-        path = (INDEX_PATH.parent / target).resolve()
-        if not path.exists():
-            errors.append(f"broken navigation link: {link}")
+    documents = [ROOT / "README.md", *sorted((ROOT / "docs").rglob("*.md"))]
+    for document in documents:
+        text = document.read_text(encoding="utf-8")
+        links = re.findall(r"\[[^\]]+\]\(([^)]+)\)", text)
+        for link in links:
+            target = link.split("#", 1)[0]
+            if not target or "://" in target or target.startswith("mailto:"):
+                continue
+            path = (document.parent / target).resolve()
+            if not path.exists():
+                relative = document.relative_to(ROOT)
+                errors.append(f"broken handbook link in {relative}: {link}")
     return errors
 
 
@@ -136,7 +139,7 @@ def main() -> int:
         return 1
 
     errors = verify_manifest(sources, gitmodules)
-    errors.extend(verify_navigation_links())
+    errors.extend(verify_handbook_links())
     if not args.links_only:
         errors.extend(verify_submodules(sources))
 
@@ -153,4 +156,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -23,6 +23,6 @@ part of the game-mode balance.
 ## Primary references
 
 - [Raw GunGame notes](../sources/user-provided/2026-07-10-gungame-notes.md)
-- [GunGame project](../../../references/KacperObara/H3VR-GunGame)
-- [GunGame map wiki](../../../references/KacperObara/H3VR-GunGame.wiki)
+- [GunGame project](../../references/KacperObara/H3VR-GunGame)
+- [GunGame map wiki](../../references/KacperObara/H3VR-GunGame.wiki)
 

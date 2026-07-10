@@ -21,6 +21,6 @@ a generic H3VR scene.
 ## Primary references
 
 - [GunGame overview](overview.md)
-- [GunGame map wiki source](../../../references/KacperObara/H3VR-GunGame.wiki)
+- [GunGame map wiki source](../../references/KacperObara/H3VR-GunGame.wiki)
 - [Map performance and VR testing](../maps/performance-and-vr-testing.md)
 

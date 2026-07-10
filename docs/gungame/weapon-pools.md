@@ -24,6 +24,6 @@ a GunGame loadout that is invalid for the active mod set.
 
 - [GunGame overview](overview.md)
 - [Raw GunGame notes](../sources/user-provided/2026-07-10-gungame-notes.md)
-- [GunGame project](../../../references/KacperObara/H3VR-GunGame)
-- [H3VR Modding Wiki source](../../../references/H3VR-Modding/wiki)
+- [GunGame project](../../references/KacperObara/H3VR-GunGame)
+- [H3VR Modding Wiki source](../../references/H3VR-Modding/wiki)
 

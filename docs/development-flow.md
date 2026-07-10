@@ -38,8 +38,8 @@ reviewing the upstream change and the handbook impact.
 
 ## Primary references
 
-- [H3VR Modding Wiki: MeatKit source](../../references/H3VR-Modding/wiki/src/creating/meatkit)
-- [H3VR Modding Wiki: scripting source](../../references/H3VR-Modding/wiki/src/creating/scripting)
-- [MeatKit source](../../references/H3VR-Modding/MeatKit)
-- [Source policy](../../SOURCES.md)
+- [H3VR Modding Wiki: MeatKit source](../references/H3VR-Modding/wiki/src/creating/meatkit)
+- [H3VR Modding Wiki: scripting source](../references/H3VR-Modding/wiki/src/creating/scripting)
+- [MeatKit source](../references/H3VR-Modding/MeatKit)
+- [Source policy](../SOURCES.md)
 
