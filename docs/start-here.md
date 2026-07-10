@@ -38,4 +38,4 @@ flowchart TD
 - [Development Flow](development-flow.md)
 - [Navigation index](navigation/index.md)
 - [How to use the handbook](using-the-handbook.md)
-- [H3VR Modding Wiki source](../references/H3VR-Modding/wiki)
+- [H3VR Modding Wiki source](https://github.com/H3VR-Modding/wiki)

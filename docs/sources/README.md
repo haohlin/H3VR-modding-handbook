@@ -14,7 +14,7 @@
 
 | Topic | Source |
 | --- | --- |
-| H3VR Modding Wiki | [Wiki source](../../references/H3VR-Modding/wiki/src) |
-| Mason | [Mason docs](../../references/H3VR-Modding/Mason/docs/src) |
-| GunGame maps | [GunGame wiki](../../references/KacperObara/H3VR-GunGame.wiki) |
-| Legacy maps | [WurstMod](../../references/Nolenz/WurstMod) |
+| H3VR Modding Wiki | [Wiki source](https://github.com/H3VR-Modding/wiki/tree/main/src) |
+| Mason | [Mason docs](https://github.com/H3VR-Modding/Mason/tree/main/docs/src) |
+| GunGame maps | [Local map-tutorial snapshot](../gungame/map-tutorial-snapshot.md) |
+| Legacy maps | [WurstMod](https://github.com/Nolenz/WurstMod) |

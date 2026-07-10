@@ -32,8 +32,7 @@ flowchart LR
 ## Primary references
 
 - [Start Here](start-here.md)
-- [H3VR Modding Wiki: MeatKit](../references/H3VR-Modding/wiki/src/creating/meatkit)
-- [H3VR Modding Wiki: scripting](../references/H3VR-Modding/wiki/src/creating/scripting)
-- [MeatKit](../references/H3VR-Modding/MeatKit)
+- [H3VR Modding Wiki: MeatKit](https://github.com/H3VR-Modding/wiki/tree/main/src/creating/meatkit)
+- [H3VR Modding Wiki: scripting](https://github.com/H3VR-Modding/wiki/tree/main/src/creating/scripting)
+- [MeatKit](https://github.com/H3VR-Modding/MeatKit)
 - [Source policy](../SOURCES.md)
-

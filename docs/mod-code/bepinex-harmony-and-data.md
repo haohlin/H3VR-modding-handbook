@@ -26,6 +26,5 @@ flowchart LR
 ## Primary references
 
 - [Development Flow](../development-flow.md)
-- [Plugin template](../../references/H3VR-Modding/H3VRPluginTemplate)
+- [Plugin template](https://github.com/H3VR-Modding/H3VRPluginTemplate)
 - [GunGame pools](../gungame/weapon-pools.md)
-

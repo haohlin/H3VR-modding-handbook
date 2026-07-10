@@ -19,6 +19,5 @@ flowchart LR
 ## Primary references
 
 - [Raw GunGame note](../sources/user-provided/2026-07-10-gungame-notes.md)
-- [GunGame project](../../references/KacperObara/H3VR-GunGame)
-- [GunGame map wiki](../../references/KacperObara/H3VR-GunGame.wiki)
-
+- [GunGame project](https://github.com/KacperObara/H3VR-GunGame)
+- [Local map-tutorial snapshot](map-tutorial-snapshot.md)

@@ -26,7 +26,6 @@ flowchart LR
 ## Primary references
 
 - [Raw workflow note](../sources/user-provided/2026-07-10-custom-weapons-stratum-mason.md)
-- [OtherLoader](../../references/devyndamonster/OtherLoader)
-- [Mason docs](../../references/H3VR-Modding/Mason/docs/src)
-- [Stratum](../../references/H3VR-Modding/Stratum)
-
+- [OtherLoader](https://github.com/devyndamonster/OtherLoader)
+- [Mason docs](https://github.com/H3VR-Modding/Mason/tree/main/docs/src)
+- [Stratum](https://github.com/H3VR-Modding/Stratum)

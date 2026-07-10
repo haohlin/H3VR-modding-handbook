@@ -18,6 +18,5 @@ flowchart LR
 ## Primary references
 
 - [GunGame overview](overview.md)
-- [GunGame map wiki](../../references/KacperObara/H3VR-GunGame.wiki)
+- [Local map-tutorial snapshot](map-tutorial-snapshot.md)
 - [Map performance + VR test](../maps/performance-and-vr-testing.md)
-

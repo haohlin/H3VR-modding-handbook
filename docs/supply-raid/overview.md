@@ -18,7 +18,7 @@ flowchart LR
 | --- | --- |
 | Supply Raid scene / gameplay layout | [Map authoring](map-authoring.md) |
 | General Unity map work | [H3VR map overview](../maps/overview.md) |
-| Supply Raid source / SDK examples | [Packer Supply Raid 1.3.0](../../references/Packer/H3VR-Supply-Raid-SRE-1.3.0) |
+| Supply Raid source / SDK examples | [Packer Supply Raid 1.3.0](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0) |
 | Supply Raid tool/release links | [Supply Raid source card](../sources/external/supply-raid.md) |
 
 > ⚠️ This handbook pins SRE-1.3.0 as a reference. Treat it as an example and
@@ -27,7 +27,6 @@ flowchart LR
 ## Primary references
 
 - [Supply Raid map authoring](map-authoring.md)
-- [Supply Raid 1.3.0 source](../../references/Packer/H3VR-Supply-Raid-SRE-1.3.0)
-- [Supply Raid SDK](../../references/Packer/H3VR-Supply-Raid-SRE-1.3.0/Supply%20Raid%20SDK)
+- [Supply Raid 1.3.0 source](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0)
+- [Supply Raid SDK](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0/Supply%20Raid%20SDK)
 - [Source card](../sources/external/supply-raid.md)
-

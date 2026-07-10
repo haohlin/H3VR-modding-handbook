@@ -44,6 +44,5 @@ flowchart LR
 
 - [Performance + VR test](performance-and-vr-testing.md)
 - [Raw Prometheus notes](../sources/user-provided/2026-07-10-prometheus-map-modding-notes.md)
-- [Atlas samples](../../references/H3VR-Modding/AtlasSampleScenes)
-- [WurstMod](../../references/Nolenz/WurstMod)
-
+- [Atlas samples](https://github.com/H3VR-Modding/AtlasSampleScenes)
+- [WurstMod](https://github.com/Nolenz/WurstMod)

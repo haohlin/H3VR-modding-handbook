@@ -26,5 +26,4 @@ flowchart LR
 
 - [GunGame overview](overview.md)
 - [Raw GunGame note](../sources/user-provided/2026-07-10-gungame-notes.md)
-- [GunGame project](../../references/KacperObara/H3VR-GunGame)
-
+- [GunGame project](https://github.com/KacperObara/H3VR-GunGame)

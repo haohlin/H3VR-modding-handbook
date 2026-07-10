@@ -46,5 +46,4 @@ flowchart LR
 
 - [Map authoring](overview.md)
 - [Raw Prometheus notes](../sources/user-provided/2026-07-10-prometheus-map-modding-notes.md)
-- [Alloy](../../references/Josh015/Alloy)
-
+- [Alloy](https://github.com/Josh015/Alloy)

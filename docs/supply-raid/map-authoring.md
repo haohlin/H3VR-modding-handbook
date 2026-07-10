@@ -29,7 +29,6 @@ flowchart LR
 ## Primary references
 
 - [Supply Raid overview](overview.md)
-- [Supply Raid 1.3.0 source](../../references/Packer/H3VR-Supply-Raid-SRE-1.3.0)
-- [Supply Raid SDK](../../references/Packer/H3VR-Supply-Raid-SRE-1.3.0/Supply%20Raid%20SDK)
+- [Supply Raid 1.3.0 source](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0)
+- [Supply Raid SDK](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0/Supply%20Raid%20SDK)
 - [General map performance + VR test](../maps/performance-and-vr-testing.md)
-

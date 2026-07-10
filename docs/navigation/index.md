@@ -23,10 +23,10 @@
 
 | Need | Upstream source |
 | --- | --- |
-| MeatKit / Atlas / Wiki | [H3VR-Modding](../../references/H3VR-Modding) |
-| Mason / Stratum / OtherLoader | [Mason](../../references/H3VR-Modding/Mason) · [Stratum](../../references/H3VR-Modding/Stratum) · [OtherLoader](../../references/devyndamonster/OtherLoader) |
-| Maps | [WurstMod](../../references/Nolenz/WurstMod) · [Atlas samples](../../references/H3VR-Modding/AtlasSampleScenes) |
-| GunGame | [Project](../../references/KacperObara/H3VR-GunGame) · [Wiki](../../references/KacperObara/H3VR-GunGame.wiki) |
-| Supply Raid | [SRE 1.3.0 source](../../references/Packer/H3VR-Supply-Raid-SRE-1.3.0) |
-| Creator examples | [Packer](../../references/Packer) · [cityrobo](../../references/cityrobo) |
+| MeatKit / Atlas / Wiki | [H3VR-Modding](https://github.com/H3VR-Modding) |
+| Mason / Stratum / OtherLoader | [Mason](https://github.com/H3VR-Modding/Mason) · [Stratum](https://github.com/H3VR-Modding/Stratum) · [OtherLoader](https://github.com/devyndamonster/OtherLoader) |
+| Maps | [WurstMod](https://github.com/Nolenz/WurstMod) · [Atlas samples](https://github.com/H3VR-Modding/AtlasSampleScenes) |
+| GunGame | [Project](https://github.com/KacperObara/H3VR-GunGame) · [Local tutorial](../gungame/map-tutorial-snapshot.md) |
+| Supply Raid | [SRE 1.3.0 source](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0) |
+| Creator examples | [Packer](https://github.com/Packer) · [cityrobo](https://github.com/cityrobo) |
 | All 27 pins | [Manifest](../../references/manifest.json) |

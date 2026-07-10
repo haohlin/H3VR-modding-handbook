@@ -20,6 +20,5 @@ flowchart LR
 ## Primary references
 
 - [Development Flow](../development-flow.md)
-- [H3VR Modding Wiki: Thunderstore](../../references/H3VR-Modding/wiki/src/creating/thunderstore)
-- [Mason packaging](../../references/H3VR-Modding/Mason/docs/src/getting_started/packaging.md)
-
+- [H3VR Modding Wiki: Thunderstore](https://github.com/H3VR-Modding/wiki/tree/main/src/creating/thunderstore)
+- [Mason packaging](https://github.com/H3VR-Modding/Mason/blob/main/docs/src/getting_started/packaging.md)
