@@ -33,10 +33,14 @@ python3 scripts/verify_handbook.py
 
 | Content | Meaning |
 | --- | --- |
-| **Guides** | Compact route and validation checklist |
-| **Raw notes** | User-provided context; re-check version-sensitive claims |
+| **Guides** | Compact, visual route and validation checklist |
+| **Raw notes** | Detailed user-provided text, context, caveats, and links; re-check version-sensitive claims |
 | **Source cards** | External link + attribution |
 | **Submodules** | Pinned upstream source; do not edit here |
+
+The compact guides are indexes, not replacements for raw source material. When
+you need the original reasoning, troubleshooting detail, or exact supplied
+links, open the matching file in [Source archive](sources/README.md).
 
 ## Before changing a real mod
 
@@ -48,4 +52,3 @@ python3 scripts/verify_handbook.py
 - [Navigation index](navigation/index.md)
 - [Source archive](sources/README.md)
 - [Contributing](../CONTRIBUTING.md)
-

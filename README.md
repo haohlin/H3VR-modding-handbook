@@ -46,6 +46,13 @@ python3 scripts/verify_handbook.py
 > ⚠️ Do not build, deploy, or edit a release from this repository. It is a
 > reference library. See [Development Flow](docs/development-flow.md).
 
+## Reading rule
+
+**Guides** use short tables and diagrams to help choose a route quickly.
+**Source archive records** deliberately retain the detailed, text-rich material
+supplied with the project, including context, caveats, and source links. Do not
+replace an archive record with a condensed guide.
+
 ## Contribute
 
 | Change | Read |

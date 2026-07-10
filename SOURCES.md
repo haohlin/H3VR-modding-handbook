@@ -3,7 +3,7 @@
 | Source type | Store it as | Rule |
 | --- | --- | --- |
 | Handbook guidance | docs/ | Keep it compact; link primary sources |
-| User-provided text | docs/sources/user-provided/ | Keep provenance header |
+| User-provided text | docs/sources/user-provided/ | Preserve detailed supplied information, context, and links; do not condense it into navigation prose or visual summaries |
 | Upstream Git docs | references/ submodule | Do not edit here |
 | External page / video / Doc | docs/sources/external/ card | Link + attribute; do not copy full text |
 
@@ -21,4 +21,3 @@
 1. Add/update manifest + navigation.
 2. Run the handbook verifier.
 3. Commit the handbook file and gitlink only.
-

@@ -1,5 +1,13 @@
 # Source Archive
 
+This archive preserves detailed source material. Use the short visual guides
+for navigation; use these files when you need the full context, caveats, and
+implementation detail supplied with the project.
+
+Archive records intentionally use normal text and headings instead of being
+compressed into tables or diagrams. They are the durable record; the guides
+point to them.
+
 | Need | Open |
 | --- | --- |
 | Map notes / Prometheus checklist | [Raw map notes](user-provided/2026-07-10-prometheus-map-modding-notes.md) |

@@ -18,7 +18,7 @@ flowchart LR
 | Guide improvement | Route guide + navigation index |
 | External source | Source card with provenance header |
 | Upstream Git source | Submodule + manifest + navigation |
-| Raw user note | User-provided source file + provenance |
+| Raw user note | Detailed user-provided source file + provenance; preserve substance, context, and links rather than replacing it with a summary, table, or diagram |
 
 ## Never add
 
@@ -47,4 +47,3 @@ python3 scripts/verify_handbook.py
 
 Report a guide problem with: **page + source + tool versions + observed result +
 safe log excerpt**.
-
