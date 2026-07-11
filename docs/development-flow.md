@@ -9,6 +9,20 @@
 | Unity content versioning | Dedicated Unity content repository | Explains the boundary |
 | Tutorials and source examples | This repository | Yes |
 
+## Codex + human operating route
+
+Use the [H3VR development skill](../skills/h3vr-mod-development/SKILL.md) when
+working with Codex.
+
+```text
+Code/data change: Codex implements -> tests/packages -> human approves release
+Unity change:     human visual intent -> Codex automates -> Unity/MeatKit tests
+                  -> human only for visual or subjective VR decisions
+```
+
+The handbook holds the public workflow copy. The H3VR-Mods repository holds the
+canonical project-specific skill and Windows paths.
+
 ~~~mermaid
 flowchart LR
   handbook[Handbook / references] --> select[Select route]
