@@ -2,14 +2,14 @@
 
 ## Purpose
 
-Create a private GitHub repository, `h3vr-modding/H3VR-modding-handbook`, that is a
-macOS-hosted learning and documentation workspace for H3VR modding. It must
+Create a public GitHub repository that is a learning and documentation
+workspace for H3VR modding. It must
 make the development routes, source material, practical Unity/map notes, and
 upstream examples easy to find without becoming another production or runtime
 workspace.
 
-The Windows `<private-windows-development-root>\\H3VR-Mods` checkout and `MeatKit-Lite` Unity project
-remain the authoritative build, package, deployment, and VR-test environments.
+The private Windows H3VR checkout and `MeatKit-Lite` Unity project remain the
+authoritative build, package, deployment, and VR-test environments.
 This repository never contains H3VR assemblies, credentials, build outputs, or
 copied production Unity projects.
 
@@ -50,7 +50,7 @@ H3VR-modding-handbook/
 │   │   ├── index.md                   # direct route and source links
 │   │   └── mind-map.md                # GitHub-renderable Mermaid mind map
 │   └── sources/
-│       ├── user-provided/             # immutable raw material supplied by project contributor
+│       ├── user-provided/             # immutable raw material supplied by contributors
 │       ├── upstream/                  # raw Markdown with redistribution permission
 │       └── external/                  # source cards for link-only material
 ├── references/                       # independently versioned Git submodules
@@ -228,8 +228,8 @@ authoritative Windows workflows.
 
 ## Acceptance criteria for the foundation
 
-- A private `h3vr-modding/H3VR-modding-handbook` GitHub repository exists and has a
-  clear README, source policy, and onboarding path.
+- A public GitHub repository exists and has a clear README, source policy, and
+  onboarding path.
 - All 22 existing reference clones are represented as clean, pinned submodules
   under `references/`, then expanded to the complete 27-entry submodule
   manifest above; `H3VR-Modding/wiki` and the GunGame wiki are included.

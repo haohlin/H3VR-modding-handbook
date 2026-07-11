@@ -1,7 +1,7 @@
 # FTW Arms Custom Weapons Tutorial Search
 
 Source: User request plus handbook research.
-Provided by: H3VR Modding Contributor and Codex research
+Provided by: project contributor and Codex research
 Captured: 2026-07-10
 Redistribution: link index only.
 
@@ -18,4 +18,3 @@ this card with a direct FTW Arms source if one is supplied.
   https://h3vr-modding.github.io/wiki/creating/making_mods.html
 - Related FTW Arms example package:
   https://thunderstore.io/c/h3vr/p/Andrew_FTW/FTW_Arms_Modular_M1a/
-

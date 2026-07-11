@@ -1,7 +1,7 @@
 # Collected External Resources
 
 Source: Links collected in the project conversation.
-Provided by: H3VR Modding Contributor
+Provided by: project contributor
 Captured: 2026-07-10
 Redistribution: link index only; no third-party full text copied.
 
@@ -36,4 +36,3 @@ The project conversation also included truncated Google Docs, Asset Store, Disco
 ManlyMarco, and Unity blog URLs. Their supplied text is preserved in the
 user-provided notes where available. A direct source card is added only when a
 complete URL or a verified upstream repository is known.
-

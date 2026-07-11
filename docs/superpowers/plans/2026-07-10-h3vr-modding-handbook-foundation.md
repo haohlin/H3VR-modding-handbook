@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
-**Goal:** Build and publish a private H3VR modding handbook with pinned source references, direct documentation routes, and a visual index.
+**Goal:** Build and publish a public H3VR modding handbook with pinned source references, direct documentation routes, and a visual index.
 
 **Architecture:** This repository is a Git superproject. Upstream GitHub sources are pinned below `references/`; authored guides and source records live below `docs/`. A Python standard-library verifier checks the source manifest, submodules, and navigation links without touching the Windows H3VR runtime.
 
@@ -66,7 +66,7 @@ Expected: `FileNotFoundError` for `references/manifest.json`.
 
 - [x] **Step 3: Create the manifest and top-level documents**
 
-Create a private-reference README with `git clone --recurse-submodules`, a `SOURCES.md` defining source classes, and a `.gitignore` limited to macOS/Python noise. Use the exact 27 source paths and URLs in the approved design spec. Use `SRE-1.3.0` as the Supply Raid requested ref and `default` for every other source.
+Create a public-reference README with `git clone --recurse-submodules`, a `SOURCES.md` defining source classes, and a `.gitignore` limited to macOS/Python noise. Use the exact 27 source paths and URLs in the approved design spec. Use `SRE-1.3.0` as the Supply Raid requested ref and `default` for every other source.
 
 - [x] **Step 4: Run the test and commit**
 
@@ -219,7 +219,7 @@ Run: `git diff --check && git add docs/navigation && git commit -m "docs: add ha
 
 Expected: Git records the index and graph with no whitespace errors.
 
-### Task 6: Implement the verifier and publish the private repository
+### Task 6: Implement the verifier and publish the repository
 
 **Files:**
 - Create: `scripts/verify_handbook.py`
@@ -253,9 +253,9 @@ Expected: all verification commands exit `0`.
 ```bash
 git switch main
 git merge --ff-only agent/handbook-foundation
-gh repo create h3vr-modding/H3VR-modding-handbook --private --source=. --remote=origin
+gh repo create <repository-owner>/H3VR-modding-handbook --public --source=. --remote=origin
 git push -u origin main
-gh repo view h3vr-modding/H3VR-modding-handbook --json nameWithOwner,isPrivate,defaultBranchRef
+gh repo view <repository-owner>/H3VR-modding-handbook --json nameWithOwner,isPrivate,defaultBranchRef
 ```
 
-Expected: private `h3vr-modding/H3VR-modding-handbook` has `main` at the verified local commit.
+Expected: the public handbook has `main` at the verified local commit.

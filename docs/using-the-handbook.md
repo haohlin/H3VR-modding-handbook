@@ -18,7 +18,7 @@ flowchart LR
 ## Clone the library
 
 ~~~bash
-git clone --recurse-submodules https://github.com/h3vr-modding/H3VR-modding-handbook.git
+git clone --recurse-submodules <repository-url>
 cd H3VR-modding-handbook
 python3 scripts/verify_handbook.py
 ~~~

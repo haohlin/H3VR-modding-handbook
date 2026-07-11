@@ -1,7 +1,7 @@
 # Prometheus Map Modding Notes — Detailed Raw Record
 
 Source: H3VR map-modding notes and transcript supplied in the project conversation.
-Provided by: H3VR Modding Contributor
+Provided by: project contributor
 Captured: 2026-07-10
 Redistribution: user-provided conversation material
 Fidelity: Text-rich preservation record. This is source material, not the
@@ -278,4 +278,3 @@ and flashlight behavior deliberately.
 1:42:13 Quality settings
 1:43:02 Lasers
 1:44:27 Flashlight
-

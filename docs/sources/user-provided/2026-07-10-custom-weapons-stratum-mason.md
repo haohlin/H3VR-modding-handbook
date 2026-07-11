@@ -1,7 +1,7 @@
 # Custom Weapons, Stratum, and Mason Notes
 
 Source: Workflow note supplied in the project conversation.
-Provided by: H3VR Modding Contributor
+Provided by: project contributor
 Captured: 2026-07-10
 Redistribution: user-provided conversation material
 Fidelity: Text-rich preservation record. This keeps the supplied workflow,

@@ -1,7 +1,7 @@
 # Unity 5.6 TextMesh Pro
 
 Source: Unity forum and Google Drive links supplied in the project conversation.
-Provided by: H3VR Modding Contributor
+Provided by: project contributor
 Captured: 2026-07-10
 Redistribution: link index only; package and third-party documentation are not copied.
 
@@ -20,4 +20,3 @@ quality than basic Unity text.
 Use the original publisher's download and license terms. Do not commit the
 downloaded package to this handbook unless its redistribution license is
 verified.
-
