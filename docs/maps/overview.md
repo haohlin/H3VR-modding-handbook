@@ -1,5 +1,14 @@
 # H3VR Map Authoring
 
+Use this guide for Atlas/WurstMod scenes, Take and Hold layouts, spawns,
+lighting, navmesh, and the performance work that makes a map playable in VR.
+It is not a plugin-only or weapon-pool workflow.
+
+> [!IMPORTANT]
+> A scene that looks correct in the Unity editor is not yet a map result. The
+> acceptance test is movement, combat, interaction, performance, and logs in a
+> real H3VR session.
+
 | Use this for | Do not use this for |
 | --- | --- |
 | Atlas/WurstMod scenes, T&H layout, spawns, navmesh | Code-only plugins or weapon pools |
@@ -12,7 +21,11 @@ flowchart LR
   export --> vr[VR test]
 ~~~
 
-## Build order
+## Build the map from player experience outward
+
+Start with readable player routes, sight lines, and combat lanes. Add gameplay
+objects to spaces that support them, then make collision, navigation, lighting,
+and occlusion agree with the final geometry.
 
 | # | Add | Quick rule |
 | --- | --- | --- |
@@ -22,7 +35,11 @@ flowchart LR
 | 4 | **Bake** | Navmesh → lighting/probes → occlusion |
 | 5 | **VR test** | Player, Sosigs, interactions, performance |
 
-## Take and Hold placement
+> [!TIP]
+> Re-bake navmesh, lighting/probes, or occlusion whenever a geometry change can
+> affect it. Otherwise an editor-correct scene can hide a runtime mismatch.
+
+## Place Take and Hold objects as a playable system
 
 | Group | Check |
 | --- | --- |
@@ -32,15 +49,19 @@ flowchart LR
 | Panels / cases | Reachable; cases open cleanly |
 | Nav blockers / barriers | Match gameplay lanes |
 
-## Export gate
+Each row is a player-facing promise: an attack vector should create an
+engagement, a panel should be reachable, and a barrier should support the lane
+rather than merely occupy the scene.
+
+## Exit gate: what a playable map proves
 
 - [ ] Player cannot fall through
 - [ ] Sosigs navigate intended routes
 - [ ] Panels, cases, encryptions, respawns work
 - [ ] Map mode loads with no missing references
-- [ ] VR run is acceptable
+- [ ] VR run is acceptable with representative gameplay equipment and settings
 
-## Primary references
+## Sources and credit
 
 - [Performance + VR test](performance-and-vr-testing.md)
 - [Raw Prometheus notes](../sources/user-provided/2026-07-10-prometheus-map-modding-notes.md)

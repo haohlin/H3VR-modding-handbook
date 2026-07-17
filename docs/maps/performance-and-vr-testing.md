@@ -1,5 +1,14 @@
 # Map Performance + VR Test
 
+Use this guide when a map is slow, visibly wrong, leaves Sosigs stuck, or is
+approaching a release decision. Reproduce one symptom, inspect the relevant
+layer, change one likely cause, then run the same H3VR scenario again.
+
+> [!NOTE]
+> A high frame rate in an empty editor view is not a VR performance result. Test
+> movement, Sosigs, a physics-heavy weapon, the game's lighting, and the
+> quality settings a player will use.
+
 | Use this for | Output |
 | --- | --- |
 | Slow map, bad lighting, stuck Sosigs, release candidate | A VR-tested performance checklist |
@@ -13,7 +22,7 @@ flowchart LR
   profile --> fix[Fix one bottleneck]
 ~~~
 
-## Fast diagnosis
+## Start from the symptom you can observe
 
 | Symptom | First check | Prefer |
 | --- | --- | --- |
@@ -24,7 +33,16 @@ flowchart LR
 | Too many drawn rooms | Occlusion data | Bake / visualize occlusion |
 | Bad flashlight | Shader/material | H3VR-compatible material path |
 
-## VR test kit
+~~~mermaid
+flowchart LR
+  symptom[Reproduce one symptom] --> inspect[Inspect the affected system]
+  inspect --> isolate[Choose one likely bottleneck]
+  isolate --> fix[Make one focused change]
+  fix --> rebake[Re-bake affected data]
+  rebake --> rerun[Repeat the same VR scenario]
+~~~
+
+## Build a purposeful VR test kit
 
 | Bring | Why |
 | --- | --- |
@@ -34,15 +52,19 @@ flowchart LR
 | Reflective weapon | Check light/reflection probes |
 | SteamVR timing + BepInEx logs | Find CPU/GPU/runtime faults |
 
-## Exit gate
+The kit turns a visual or performance complaint into evidence. For example, a
+laser exposes real collider shape, while a flashlight and reflective weapon
+show whether lighting/probes fail during a normal player path.
+
+## Exit gate: evidence before release
 
 - [ ] Move, collide, shoot, reload
 - [ ] Spawn and fight Sosigs
 - [ ] Walk every lighting transition
 - [ ] Check quality settings deliberately
-- [ ] Read logs after the run
+- [ ] Read logs after the run and record the first relevant failure signal
 
-## Primary references
+## Sources and credit
 
 - [Map authoring](overview.md)
 - [Raw Prometheus notes](../sources/user-provided/2026-07-10-prometheus-map-modding-notes.md)
