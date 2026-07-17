@@ -13,17 +13,6 @@ authored teaching, original evidence, and runtime work in their proper places.
 | **Verify a source** | You need authorship, capture date, exact context, or a pin | [Source archive](sources/README.md) | A current compatibility check |
 | **Build a mod** | You are changing code, content, data, or a package | Open the Windows workspace | This reference repository |
 
-```mermaid
-flowchart LR
-  question[Question or task] --> route{What do you need?}
-  route -->|Direction| guide[Authored guide]
-  route -->|Original context| archive[Source record or pinned reference]
-  route -->|A real change| windows[Authoritative Windows workspace]
-  guide --> verify[Route-specific validation]
-  archive --> guide
-  windows --> runtime[H3VR, VR, and log evidence]
-```
-
 ## Clone the library when research needs local search
 
 ```bash

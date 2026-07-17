@@ -19,16 +19,6 @@ the mod. It explains where a change belongs and what counts as a real result.
 
 ## From question to verified change
 
-```mermaid
-flowchart LR
-  handbook[Handbook: route and sources] --> scope[Choose the real workspace]
-  scope --> edit[Edit authoritative source]
-  edit --> inspect[Build or package, then inspect output]
-  inspect --> deploy[Use the supported deployment workflow]
-  deploy --> runtime[H3VR, VR, and log test]
-  runtime --> evidence[Commit intentional source and results]
-```
-
 The important transition is between **understanding** and **editing**. The
 handbook can explain the loader, package, or map system, but it cannot confirm
 your installed profile, a Unity visual result, or a VR interaction. Those are

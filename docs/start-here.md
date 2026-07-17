@@ -21,17 +21,6 @@ test.
 | Supply Raid content | [Supply Raid](supply-raid/overview.md) | The Supply Raid scene and mode data load together |
 | A Thunderstore package | [Package -> test -> release](releases/thunderstore.md) | Package contents and dependencies pass review before publication |
 
-```mermaid
-flowchart TD
-  choose{What changes?}
-  choose -->|Unity object or content| unity[Unity / MeatKit-Lite route]
-  choose -->|Map or scene| maps[Map authoring route]
-  choose -->|Firearm or item| item[OLP item tutorial]
-  choose -->|Code or generated data| code[Code and data route]
-  choose -->|Game mode| modes[GunGame or Supply Raid]
-  choose -->|Package| release[Release route]
-```
-
 ## The shared working loop
 
 The implementation differs by route, but a completed change always has the

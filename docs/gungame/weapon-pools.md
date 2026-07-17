@@ -8,13 +8,6 @@ runtime registry and every selected object remains physically usable in H3VR.
 > The active runtime object registry is the source of truth. Installed content
 > or a generated file on disk is not proof that GunGame can select the object.
 
-~~~mermaid
-flowchart LR
-  registry[Active runtime registry] --> generate[Deterministic generation]
-  generate --> validate[Validate IDs + feeds]
-  validate --> test[Runtime pool test]
-~~~
-
 | Rule | Use |
 | --- | --- |
 | Source of truth | Active runtime object registry |

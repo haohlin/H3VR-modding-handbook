@@ -13,14 +13,6 @@ It is not a plugin-only or weapon-pool workflow.
 | --- | --- |
 | Atlas/WurstMod scenes, T&H layout, spawns, navmesh | Code-only plugins or weapon pools |
 
-~~~mermaid
-flowchart LR
-  layout[Layout] --> play[Gameplay objects]
-  play --> bake[Bake: nav / light / occlusion]
-  bake --> export[Export]
-  export --> vr[VR test]
-~~~
-
 ## Build the map from player experience outward
 
 Start with readable player routes, sight lines, and combat lanes. Add gameplay

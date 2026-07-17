@@ -25,16 +25,6 @@ or pinned upstream reference.
 | **Supply Raid** | [Supply Raid overview](../supply-raid/overview.md) | [Supply Raid map authoring](../supply-raid/map-authoring.md) |
 | **Release** | [Package -> test -> release](../releases/thunderstore.md) | [Thunderstore upstream guide](https://github.com/H3VR-Modding/wiki/tree/main/src/creating/thunderstore) |
 
-```mermaid
-flowchart TD
-  start[Start with a deliverable] --> learn[Read the authored route]
-  learn --> source{Need source-level detail?}
-  source -->|Yes| archive[Open source record or pin]
-  source -->|No| workspace[Open Windows workspace]
-  archive --> workspace
-  workspace --> validate[Build, inspect, then validate in H3VR]
-```
-
 ## Reference shelves
 
 These shelves are evidence to consult, not substitute workspaces to modify.

@@ -9,14 +9,6 @@ generated progression pool; both must be tested against the active runtime.
 > feels right without its real pool, or a pool that resolves outside its enabled
 > registry, is not a complete GunGame result.
 
-~~~mermaid
-flowchart LR
-  gungame[GunGame] --> map[Map route]
-  gungame --> pools[Weapon-pool route]
-  map --> vr[Runtime test]
-  pools --> registry[Active registry validation]
-~~~
-
 | Change | Open |
 | --- | --- |
 | Map layout, spawns, gameplay space | [Map authoring](map-authoring.md) |

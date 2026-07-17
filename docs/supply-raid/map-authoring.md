@@ -9,14 +9,6 @@ intended assets, then validate the actual player and Sosig flow in Supply Raid.
 > and asset patterns, then keep your own authored source and matching `.meta`
 > files under version control.
 
-~~~mermaid
-flowchart LR
-  ref[Inspect SR Editor + SDK] --> scene[Author scene / content]
-  scene --> mode[Configure Supply Raid mode data]
-  mode --> build[Build package]
-  build --> test[Run Supply Raid]
-~~~
-
 ## Build from reference to runtime evidence
 
 | Step | Confirm |

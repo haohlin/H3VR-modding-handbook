@@ -8,14 +8,6 @@ DLL or generated file as proof that the running H3VR registry actually uses it.
 > Installed does not mean enabled, and compiled does not mean called. Validate
 > the live registry or target in the runtime that will actually use the result.
 
-~~~mermaid
-flowchart LR
-  change[Code / data change] --> api[Check live API / registry]
-  api --> build[Build + package]
-  build --> deploy[Deploy with wrapper]
-  deploy --> vr[VR test + logs]
-~~~
-
 | Work | Required checks |
 | --- | --- |
 | **Harmony / code** | Live signature, registered target, build, package, deploy, logs |

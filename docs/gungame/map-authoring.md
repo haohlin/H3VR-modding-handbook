@@ -8,13 +8,6 @@ spawns, and enemy routes that stays fair across close and long-range weapons.
 > Editor registration is not enough. Run GunGame in H3VR to prove the mode sees
 > the map and the combat loop survives real progression equipment.
 
-~~~mermaid
-flowchart LR
-  tutorial[Read GunGame map tutorial] --> layout[Build gameplay lanes]
-  layout --> spawn[Check spawns + routes]
-  spawn --> vr[Run GunGame in VR]
-~~~
-
 | Check | Pass condition |
 | --- | --- |
 | Weapon space | Supports close + long range weapons |

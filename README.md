@@ -23,16 +23,6 @@ versioned sources behind it.
 | Make Supply Raid content | [Supply Raid](docs/supply-raid/overview.md) | The SRE reference boundary and mode-specific test route |
 | Prepare a release | [Package -> test -> release](docs/releases/thunderstore.md) | A package inspection and explicit publication gate |
 
-```mermaid
-flowchart LR
-  question[What do you want to change?] --> route[Choose one guide]
-  route --> model[Understand the system]
-  model --> windows[Authoritative Windows workspace]
-  windows --> package[Build or package]
-  package --> verify[H3VR, VR, and log validation]
-  verify --> evidence[Commit source and record evidence]
-```
-
 ## How to use this handbook
 
 The handbook is deliberately layered. Start with an authored guide for the

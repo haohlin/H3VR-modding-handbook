@@ -13,15 +13,6 @@ layer, change one likely cause, then run the same H3VR scenario again.
 | --- | --- |
 | Slow map, bad lighting, stuck Sosigs, release candidate | A VR-tested performance checklist |
 
-~~~mermaid
-flowchart LR
-  collision[Collision] --> nav[Navmesh]
-  nav --> bake[Light + probes + occlusion]
-  bake --> load[Load in H3VR]
-  load --> profile[SteamVR + logs]
-  profile --> fix[Fix one bottleneck]
-~~~
-
 ## Start from the symptom you can observe
 
 | Symptom | First check | Prefer |
@@ -40,6 +31,8 @@ flowchart LR
   isolate --> fix[Make one focused change]
   fix --> rebake[Re-bake affected data]
   rebake --> rerun[Repeat the same VR scenario]
+  rerun -->|Still fails| inspect
+  rerun -->|Passes| record[Record result]
 ~~~
 
 ## Build a purposeful VR test kit

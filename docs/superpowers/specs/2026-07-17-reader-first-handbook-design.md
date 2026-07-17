@@ -199,9 +199,11 @@ Use GitHub-native Markdown as a visual system:
 - Use GitHub callouts (`[!NOTE]`, `[!TIP]`, `[!IMPORTANT]`, `[!WARNING]`) for
   reader decisions, safety boundaries, version-sensitive facts, and common
   traps. Do not use a warning merely for decoration.
-- Use Mermaid freely where a lifecycle, architecture, decision, ownership
-  relationship, or before/after state benefits from a visual model. A route
-  may contain more than one diagram when each has a distinct teaching job.
+- Use Mermaid only when it reveals a lifecycle with feedback, an architecture,
+  an ownership relationship, or a non-obvious decision that prose/table cannot
+  show as clearly. Do not draw a linear sequence already stated beside it. A
+  route may contain more than one diagram only when each has a distinct,
+  necessary teaching job.
 - Use tables for route cards, comparisons, milestones, components, ownership,
   compatibility, acceptance gates, and before/after states. Pair a table with
   prose when the reader needs interpretation; do not turn an entire narrative

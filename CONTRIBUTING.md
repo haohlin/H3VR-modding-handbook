@@ -10,17 +10,6 @@ upstream reference.
 > visual or decision aid, an observable validation step, and direct credit for
 > the evidence it relies on.
 
-~~~mermaid
-flowchart LR
-  change[Proposed change] --> type{What type?}
-  type -->|Guide| guide[Edit route + visual flow + validation]
-  type -->|External source| card[Add source card]
-  type -->|Git project| submodule[Add pin + manifest]
-  guide --> verify[Run verifier]
-  card --> verify
-  submodule --> verify
-~~~
-
 ## Contribution map
 
 | Change | Add / update |

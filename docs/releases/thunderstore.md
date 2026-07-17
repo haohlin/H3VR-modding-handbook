@@ -9,15 +9,6 @@ inspected.
 > Publication is a separate decision. The final gate requires explicit user
 > approval even after all technical checks pass.
 
-~~~mermaid
-flowchart LR
-  source[Committed source] --> test[Test + verify]
-  test --> package[Build package]
-  package --> deploy[Deploy]
-  deploy --> vr[VR test + logs]
-  vr --> publish[Explicit publish approval]
-~~~
-
 | Gate | Must be true |
 | --- | --- |
 | Source | Intentional files only |
