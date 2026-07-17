@@ -1,32 +1,55 @@
-# Navigation Index
+# Handbook Navigation
 
-| I need | Open |
-| --- | --- |
-| Choose a route | [Start Here](../start-here.md) |
-| Learn online / clone locally | [How to use the handbook](../using-the-handbook.md) |
-| Understand Windows boundary | [Development Flow](../development-flow.md) |
-| See all routes | [Mind map](mind-map.md) |
-| Find notes / source cards | [Source archive](../sources/README.md) |
+Use this page when you know the subject but not the route. It is a topic map,
+not a prerequisite: each link below leads directly to a guide, source archive,
+or pinned upstream reference.
 
-## Guides
+## Find the next useful page
 
-| Route | Guide |
-| --- | --- |
-| Maps | [Authoring](../maps/overview.md) · [Performance + VR](../maps/performance-and-vr-testing.md) |
-| Weapons | [Unity -> OtherLoaderPatched -> Mason](../weapons/custom-weapons-stratum-mason.md) |
-| Code + data | [BepInEx / Harmony / generators](../mod-code/bepinex-harmony-and-data.md) |
-| GunGame | [Overview](../gungame/overview.md) · [Maps](../gungame/map-authoring.md) · [Pools](../gungame/weapon-pools.md) |
-| Supply Raid | [Overview](../supply-raid/overview.md) · [Map authoring](../supply-raid/map-authoring.md) |
-| Release | [Package → test → release](../releases/thunderstore.md) |
+| I need to… | Go to | Why this is the right first stop |
+| --- | --- | --- |
+| Choose work from the deliverable | [Start Here](../start-here.md) | Select one implementation route before opening a project |
+| Understand where real work happens | [Development Flow](../development-flow.md) | Establish the Windows-authoritative boundary |
+| Read, clone, or verify original material | [How to use the handbook](../using-the-handbook.md) | Choose guides, archive records, or local pins deliberately |
+| See the handbook as a system | [Topic map](mind-map.md) | Build a mental model of connected H3VR concerns |
+| Inspect detailed notes and source cards | [Source archive](../sources/README.md) | Preserve original context, links, and credit |
+
+## Follow a subject route
+
+| Subject | First guide | Then deepen with |
+| --- | --- | --- |
+| **Maps** | [Map authoring](../maps/overview.md) | [Performance and VR testing](../maps/performance-and-vr-testing.md) |
+| **Custom items** | [Unity -> OtherLoaderPatched -> Mason](../weapons/custom-weapons-stratum-mason.md) | [OLP source and credit record](../sources/external/otherloader-patched.md) |
+| **Code and data** | [BepInEx, Harmony, and data](../mod-code/bepinex-harmony-and-data.md) | [Development Flow](../development-flow.md) |
+| **GunGame** | [GunGame overview](../gungame/overview.md) | [Map authoring](../gungame/map-authoring.md) or [weapon pools](../gungame/weapon-pools.md) |
+| **Supply Raid** | [Supply Raid overview](../supply-raid/overview.md) | [Supply Raid map authoring](../supply-raid/map-authoring.md) |
+| **Release** | [Package -> test -> release](../releases/thunderstore.md) | [Thunderstore upstream guide](https://github.com/H3VR-Modding/wiki/tree/main/src/creating/thunderstore) |
+
+```mermaid
+flowchart TD
+  start[Start with a deliverable] --> learn[Read the authored route]
+  learn --> source{Need source-level detail?}
+  source -->|Yes| archive[Open source record or pin]
+  source -->|No| workspace[Open Windows workspace]
+  archive --> workspace
+  workspace --> validate[Build, inspect, then validate in H3VR]
+```
 
 ## Reference shelves
 
-| Need | Upstream source |
+These shelves are evidence to consult, not substitute workspaces to modify.
+
+| Need | Credited primary source |
 | --- | --- |
-| MeatKit / Atlas / Wiki | [H3VR-Modding](https://github.com/H3VR-Modding) |
-| Mason / Stratum / loaders | [Mason](https://github.com/H3VR-Modding/Mason) · [Stratum](https://github.com/H3VR-Modding/Stratum) · [OtherLoaderPatched](../sources/external/otherloader-patched.md) · [Original OtherLoader](https://github.com/devyndamonster/OtherLoader) |
-| Maps | [WurstMod](https://github.com/Nolenz/WurstMod) · [Atlas samples](https://github.com/H3VR-Modding/AtlasSampleScenes) |
-| GunGame | [Project](https://github.com/KacperObara/H3VR-GunGame) · [Local tutorial](../gungame/map-tutorial-snapshot.md) |
+| MeatKit, Atlas, and wiki material | [H3VR-Modding](https://github.com/H3VR-Modding) |
+| Mason, Stratum, and loaders | [Mason](https://github.com/H3VR-Modding/Mason) · [Stratum](https://github.com/H3VR-Modding/Stratum) · [OtherLoaderPatched](../sources/external/otherloader-patched.md) · [Original OtherLoader](https://github.com/devyndamonster/OtherLoader) |
+| Map examples | [WurstMod](https://github.com/Nolenz/WurstMod) · [Atlas samples](https://github.com/H3VR-Modding/AtlasSampleScenes) |
+| GunGame | [Project](https://github.com/KacperObara/H3VR-GunGame) · [local tutorial snapshot](../gungame/map-tutorial-snapshot.md) |
 | Supply Raid | [SRE 1.3.0 source](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0) |
 | Creator examples | [Packer](https://github.com/Packer) · [cityrobo](https://github.com/cityrobo) |
-| All 29 pins | [Manifest](../../references/manifest.json) |
+| All reviewed pins | [29-source manifest](../../references/manifest.json) |
+
+> [!TIP]
+> If a source record and an authored guide appear to disagree, check the source
+> record's capture date, scope, and release/source boundary first. The guide
+> should link to the record rather than silently overwrite its context.
