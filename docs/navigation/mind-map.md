@@ -18,7 +18,7 @@ flowchart LR
 
   handbook --> weapons[Custom weapons]
   weapons --> implementation[Unity implementation]
-  weapons --> otherloader[OtherLoader assets]
+  weapons --> otherloader[OtherLoaderPatched assets]
   weapons --> stratum[Stratum]
   weapons --> mason[Mason package flow]
 

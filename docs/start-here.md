@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | Scene, prefab, material, mesh, audio, MonoBehaviour | [Unity / MeatKit flow](development-flow.md) | Windows MeatKit-Lite |
 | Map, T&H layout, lighting, navmesh | [Maps](maps/overview.md) | Windows Unity + VR |
-| Firearm or item | [Custom weapons](weapons/custom-weapons-stratum-mason.md) | Unity + loader/package + VR |
+| Firearm or item | [Custom weapons / OLP](weapons/custom-weapons-stratum-mason.md) | Unity + loader/package + VR |
 | BepInEx / Harmony behaviour | [Code mods](mod-code/bepinex-harmony-and-data.md) | Windows H3VR-Mods |
 | Generated pools / profiles | [Data mods](mod-code/bepinex-harmony-and-data.md) | Windows staging + runtime registry |
 | GunGame map or pool | [GunGame](gungame/overview.md) | Correct branch + runtime test |

@@ -56,8 +56,8 @@ def verify_manifest(sources: list[dict[str, str]], gitmodules: dict[str, str]) -
     errors: list[str] = []
     paths = [source.get("path") for source in sources]
     urls = [source.get("url") for source in sources]
-    if len(sources) != 27:
-        errors.append(f"manifest has {len(sources)} sources, expected 27")
+    if len(sources) != 29:
+        errors.append(f"manifest has {len(sources)} sources, expected 29")
     if len(set(paths)) != len(paths):
         errors.append("manifest has duplicate paths")
     if len(set(urls)) != len(urls):

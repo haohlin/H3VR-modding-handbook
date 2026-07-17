@@ -60,3 +60,12 @@ built-in MeatKit build entry point; validate the chosen build profile first.
   headless-runtime test.
 - Deploy or publish only after the required package checks and explicit human
   authorization.
+
+## OtherLoaderPatched item route
+
+For a custom item using OtherLoaderPatched (OLP), read
+[`docs/weapons/custom-weapons-stratum-mason.md`](../../docs/weapons/custom-weapons-stratum-mason.md)
+before authoring. Use OLP MeatKit build roots for new builds; inspect generated
+manifest dependencies and validate spawner, vault, and VR behavior in Windows.
+Treat pinned OLP source version as source evidence only; Thunderstore package
+and installed manifest define release state.

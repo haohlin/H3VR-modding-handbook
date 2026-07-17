@@ -79,3 +79,9 @@
 [submodule "Josh015-Alloy"]
 	path = references/Josh015/Alloy
 	url = https://github.com/Josh015/Alloy.git
+[submodule "references/Sirdoggy/OtherLoaderPatched"]
+	path = references/Sirdoggy/OtherLoaderPatched
+	url = https://gitlab.com/Sirdoggy/OtherLoaderPatched.git
+[submodule "references/Sirdoggy/MeatKit_OtherLoaderPatched"]
+	path = references/Sirdoggy/MeatKit_OtherLoaderPatched
+	url = https://github.com/sirdoggy45/MeatKit_OtherLoaderPatched.git

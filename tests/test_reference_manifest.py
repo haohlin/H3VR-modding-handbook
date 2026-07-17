@@ -11,11 +11,11 @@ class ReferenceManifestTests(unittest.TestCase):
     def load_sources(self):
         return json.loads(MANIFEST.read_text(encoding="utf-8"))["submodules"]
 
-    def test_manifest_has_27_unique_sources(self):
+    def test_manifest_has_29_unique_sources(self):
         sources = self.load_sources()
-        self.assertEqual(27, len(sources))
-        self.assertEqual(27, len({item["path"] for item in sources}))
-        self.assertEqual(27, len({item["url"] for item in sources}))
+        self.assertEqual(29, len(sources))
+        self.assertEqual(29, len({item["path"] for item in sources}))
+        self.assertEqual(29, len({item["url"] for item in sources}))
 
     def test_manifest_contains_required_special_sources(self):
         sources = {item["path"]: item for item in self.load_sources()}
@@ -26,6 +26,8 @@ class ReferenceManifestTests(unittest.TestCase):
         for path in (
             "references/H3VR-Modding/OtherLoader",
             "references/devyndamonster/OtherLoader",
+            "references/Sirdoggy/OtherLoaderPatched",
+            "references/Sirdoggy/MeatKit_OtherLoaderPatched",
             "references/KacperObara/H3VR-GunGame.wiki",
             "references/Nolenz/WurstMod",
             "references/Josh015/Alloy",
@@ -35,4 +37,3 @@ class ReferenceManifestTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
