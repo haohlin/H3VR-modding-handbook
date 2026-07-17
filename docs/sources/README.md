@@ -1,12 +1,12 @@
 # Source Archive
 
-This archive preserves detailed source material. Use the short visual guides
-for navigation; use these files when you need the full context, caveats, and
-implementation detail supplied with the project.
+This archive preserves detailed source material. Use authored guides for a
+clear, visual learning path; use these files when you need the full context,
+caveats, and implementation detail supplied with the project.
 
-Archive records intentionally use normal text and headings instead of being
-compressed into tables or diagrams. They are the durable record; the guides
-point to them.
+Archive records preserve original context and provenance instead of being
+rewritten as simplified guides. They are the durable record; the guides point
+to them.
 
 | Need | Open |
 | --- | --- |

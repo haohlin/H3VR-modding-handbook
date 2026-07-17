@@ -88,10 +88,10 @@ docs/
 references/                       Read-only pinned upstream repositories
 ```
 
-`docs/index.md` replaces both current navigation entry points. Its one compact
-decision table leads directly to a tutorial, guide, how-to, explanation, or
-reference page. The existing Mermaid map is retained as a small orientation
-diagram on this page, not as a second mandatory navigation destination.
+`docs/index.md` replaces both current navigation entry points. Its clear,
+visual route chooser leads directly to a tutorial, guide, how-to, explanation,
+or reference page. The existing Mermaid map is retained as orientation inside
+that page, not as a second mandatory navigation destination.
 
 ## Content migration map
 
@@ -127,10 +127,12 @@ future static site without another content migration.
 
 ```text
 Outcome
+At a glance: the workflow visual and expected result
 Before you begin
-Build it
-Validate it
-What changed and why
+Build it, with the reason behind each decision
+Inspect the result
+Understand what changed and why
+Troubleshoot a failed result
 Next step
 Sources and credit
 ```
@@ -140,9 +142,9 @@ Sources and credit
 ```text
 Goal
 Use this when
-Before you begin
-Steps
-Verify
+Before you begin and what success looks like
+The shortest safe path
+Verify the expected result
 Common failure modes
 Sources and credit
 ```
@@ -151,8 +153,9 @@ Sources and credit
 
 ```text
 Purpose
-Mental model
-Choose the right route
+At a glance: an original system or decision visual
+Mental model and vocabulary
+Choose the right route, with a decision table where it helps
 Rules and boundaries
 Practical implications
 Sources and credit
@@ -171,20 +174,52 @@ Link or pinned repository
 
 ## Visual and writing system
 
-- Use sentence-case headings and descriptive links.
-- Begin each page with a two-sentence answer: what it helps the reader do and
-  when to use it.
-- Use a Mermaid diagram only for a choice, lifecycle, or system relationship
-  that prose cannot make clearer. One small diagram per route is normally the
-  maximum.
-- Use tables only for comparison, compatibility, ownership, or acceptance
-  gates. Do not use tables as paragraph replacement.
-- Use numbered lists for ordered actions, bullets for unordered evidence, and
-  code style for paths, commands, identifiers, versions, and package strings.
+The handbook should read like deliberate public documentation, not a pile of
+minimal reference cards. Every authored page uses the following layers, in the
+order that serves the reader:
+
+1. **Orientation.** State the outcome, intended reader, and when to use the
+   page. Begin with a concise promise, but allow enough prose to make the
+   problem feel concrete.
+2. **Understanding.** Explain the mental model before asking a reader to act.
+   Use an original Mermaid lifecycle, decision diagram, relationship map, or
+   annotated table whenever it makes a system easier to grasp.
+3. **Action.** Give an ordered, natural procedure with the reason behind each
+   consequential choice. Use code blocks for exact commands and identifiers;
+   do not reduce explanatory prose to a checklist merely to be brief.
+4. **Verification.** Show the observable result, acceptance gates, log or VR
+   checks, and the first useful diagnosis if it fails.
+5. **Evidence.** End with direct, credited primary sources and make the
+   release/source/historical boundary explicit where it matters.
+
+Use GitHub-native Markdown as a visual system:
+
+- Use sentence-case headings, descriptive links, short readable paragraphs,
+  intentional whitespace, and a clear heading hierarchy.
+- Use GitHub callouts (`[!NOTE]`, `[!TIP]`, `[!IMPORTANT]`, `[!WARNING]`) for
+  reader decisions, safety boundaries, version-sensitive facts, and common
+  traps. Do not use a warning merely for decoration.
+- Use Mermaid freely where a lifecycle, architecture, decision, ownership
+  relationship, or before/after state benefits from a visual model. A route
+  may contain more than one diagram when each has a distinct teaching job.
+- Use tables for route cards, comparisons, milestones, components, ownership,
+  compatibility, acceptance gates, and before/after states. Pair a table with
+  prose when the reader needs interpretation; do not turn an entire narrative
+  into a spreadsheet.
+- Use numbered lists for ordered actions, bullets for evidence, and
+  collapsible `<details>` sections for optional source-level detail that would
+  interrupt a first pass. Keep essential steps visible.
+- Give code blocks an expected result or a follow-up verification, rather than
+  leaving a command unexplained.
 - End action pages with verification and expected failure signals; do not end
   with a generic link list.
 - Place primary references at page end. Do not require source-card reading to
   understand an action page.
+
+Raw user-provided notes, source snapshots, and external source cards are
+evidence records, not pages to cosmetically rewrite. Preserve their supplied
+wording, context, and provenance. An authored guide may be rich, narrative,
+and visual while it links to those records for exact original detail.
 
 ## GitHub project contract
 
@@ -192,8 +227,8 @@ The rewritten root README contains, in order:
 
 1. Project promise and reader boundary.
 2. Three immediate actions: custom item, code/data mod, map/game-mode work.
-3. Concise workflow diagram: handbook -> authoritative Windows workspace ->
-   package -> VR validation.
+3. A visual workflow from handbook to authoritative Windows workspace,
+   package, and VR validation.
 4. What is included: credited guides, source records, and 29 pinned upstream
    references.
 5. What is intentionally excluded: game files, runtime projects, credentials,
@@ -217,8 +252,9 @@ Do not set a homepage until a maintained published documentation site exists.
    no stale link points at removed locations.
 5. Root README has one route chooser; no duplicated navigation/index/mind-map
    entry sequence remains.
-6. Each reader-facing route matches exactly one page template and has an
-   explicit validation section.
+6. Each reader-facing route applies the page template intentionally, has a
+   useful visual or decision aid where appropriate, and has an explicit
+   validation section.
 7. Every source record preserves author/publisher/capture/provenance data.
 8. GitHub description is updated only after repository-content verification.
 
