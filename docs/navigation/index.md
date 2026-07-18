@@ -10,6 +10,7 @@ or pinned upstream reference.
 | --- | --- | --- |
 | Choose work from the deliverable | [Start Here](../start-here.md) | Select one implementation route before opening a project |
 | Understand where real work happens | [Development Flow](../development-flow.md) | Establish the Windows-authoritative boundary |
+| Study an existing Unity package without retaining its assets | [AI-in-the-loop asset inspection](../ai-in-the-loop-asset-inspection.md) | Use a hash-backed manifest and targeted original implementation |
 | Read, clone, or verify original material | [How to use the handbook](../using-the-handbook.md) | Choose guides, archive records, or local pins deliberately |
 | See the handbook as a system | [Topic map](mind-map.md) | Build a mental model of connected H3VR concerns |
 | Inspect detailed notes and source cards | [Source archive](../sources/README.md) | Preserve original context, links, and credit |
@@ -20,6 +21,7 @@ or pinned upstream reference.
 | --- | --- | --- |
 | **Maps** | [Map authoring](../maps/overview.md) | [Performance and VR testing](../maps/performance-and-vr-testing.md) |
 | **Custom items** | [Unity -> OtherLoaderPatched -> Mason](../weapons/custom-weapons-stratum-mason.md) | [OLP source and credit record](../sources/external/otherloader-patched.md) |
+| **Scope research** | [AI-in-the-loop asset inspection](../ai-in-the-loop-asset-inspection.md) | [Development Flow](../development-flow.md) |
 | **Code and data** | [BepInEx, Harmony, and data](../mod-code/bepinex-harmony-and-data.md) | [Development Flow](../development-flow.md) |
 | **GunGame** | [GunGame overview](../gungame/overview.md) | [Map authoring](../gungame/map-authoring.md) or [weapon pools](../gungame/weapon-pools.md) |
 | **Supply Raid** | [Supply Raid overview](../supply-raid/overview.md) | [Supply Raid map authoring](../supply-raid/map-authoring.md) |

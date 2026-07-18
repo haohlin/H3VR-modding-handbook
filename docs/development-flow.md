@@ -35,6 +35,7 @@ with the quality bar:
 | Code or data | Codex inspects API/registry -> edits -> builds/packages -> reports evidence | A release or product decision changes scope |
 | Unity content | Human establishes visual intent -> Codex automates repeatable work -> Unity/MeatKit test | The result depends on visual feel or subjective VR interaction |
 | Release | Prepare, inspect, test, and document | The package is published publicly |
+| Existing Unity package research | Codex creates a hash-backed structural manifest; human reviews visual conclusions | Source permission, visual interpretation, VR feel, and release scope matter |
 
 ## Guardrails that prevent expensive mistakes
 
@@ -58,6 +59,7 @@ with the quality bar:
 
 - [Start Here](start-here.md)
 - [How to use the handbook](using-the-handbook.md)
+- [AI-in-the-loop Unity asset inspection](ai-in-the-loop-asset-inspection.md)
 - [H3VR Modding Wiki: MeatKit](https://github.com/H3VR-Modding/wiki/tree/main/src/creating/meatkit)
 - [H3VR Modding Wiki: scripting](https://github.com/H3VR-Modding/wiki/tree/main/src/creating/scripting)
 - [MeatKit](https://github.com/H3VR-Modding/MeatKit)

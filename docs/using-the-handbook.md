@@ -51,9 +51,16 @@ Confirm this sequence is visible in your work:
 4. A package/build result is inspected before deployment.
 5. H3VR, VR, and logs provide runtime evidence.
 
+For read-only package research before authoring new Unity content, use
+[AI-in-the-loop asset inspection](ai-in-the-loop-asset-inspection.md). It keeps
+research evidence small and does not turn this public handbook into an asset
+archive.
+
 ## Continue from here
 
 - [Navigation index](navigation/index.md) for all routes and reference shelves.
+- [AI-in-the-loop Unity asset inspection](ai-in-the-loop-asset-inspection.md)
+  for manifest-first scope and package research.
 - [Source archive](sources/README.md) for the retained detailed material.
 - [Contributing](../CONTRIBUTING.md) for source, provenance, and verification
   expectations.

@@ -21,6 +21,7 @@ versioned sources behind it.
 | Build a map or game-mode content | [Map authoring](docs/maps/overview.md) | A scene-to-VR workflow with performance gates |
 | Make a GunGame map or pool | [GunGame](docs/gungame/overview.md) | The correct map, pool, and active-registry route |
 | Make Supply Raid content | [Supply Raid](docs/supply-raid/overview.md) | The SRE reference boundary and mode-specific test route |
+| Study an existing Unity package safely | [AI-in-the-loop asset inspection](docs/ai-in-the-loop-asset-inspection.md) | A hash-backed, manifest-first research loop |
 | Prepare a release | [Package -> test -> release](docs/releases/thunderstore.md) | A package inspection and explicit publication gate |
 
 ## How to use this handbook
