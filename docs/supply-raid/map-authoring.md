@@ -11,9 +11,29 @@ intended assets, then validate the actual player and Sosig flow in Supply Raid.
 
 ## Build from reference to runtime evidence
 
+### Follow the owner baseline first
+
+Packer's official package page gives the minimum mapper setup. Use the source
+page for exact current instructions; its captured baseline is:
+
+1. Install Unity `5.6.7f1`, set up MeatKit, and import Atlas.
+2. Add basic Atlas Scene Settings to the scene, then import the Supply Raid SDK.
+3. Place `SR_Scene` and at least two `SR_SupplyPoint` prefabs from the SDK.
+4. Add the Supply Raid dependency to the build profile and build as a regular
+   sandbox map.
+
+For component-specific detail after that baseline, use Packer's official
+[Supply Raid Wiki](https://thunderstore.io/c/h3vr/p/Packer/SupplyRaid/wiki/),
+especially its Map Components, SDK, and Supply Points pages.
+
+> [!NOTE]
+> This is owner-provided published guidance, captured 2026-07-18. It is
+> separate from the handbook's pinned SRE 1.3.0 study reference; verify the
+> package/source version boundary before relying on either for a current build.
+
 | Step | Confirm |
 | --- | --- |
-| **Reference** | SRE 1.3.0 editor/SDK path and target versions are known |
+| **Reference** | Owner baseline is read; SRE 1.3.0 editor/SDK study path and target versions are known |
 | **Scene** | Collision, navmesh, lighting, and gameplay lanes are usable |
 | **Mode data** | Supply Raid-specific objects/config are included intentionally |
 | **Package** | Correct scene/assets are in the package |
@@ -34,6 +54,9 @@ or runs the content correctly.
 ## Sources and credit
 
 - [Supply Raid overview](overview.md)
+- [Official Supply Raid package / mapper baseline](https://thunderstore.io/c/h3vr/p/Packer/SupplyRaid/)
+- [Official Supply Raid Wiki](https://thunderstore.io/c/h3vr/p/Packer/SupplyRaid/wiki/)
 - [Supply Raid 1.3.0 source](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0)
 - [Supply Raid SDK](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0/Supply%20Raid%20SDK)
+- [Owner guidance and source/release boundary](../sources/external/supply-raid.md)
 - [General map performance + VR test](../maps/performance-and-vr-testing.md)

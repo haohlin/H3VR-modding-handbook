@@ -14,6 +14,7 @@ Redistribution: link index only; no third-party full text copied.
 - Stratum source: https://github.com/H3VR-Modding/Stratum
 - WurstMod source: https://github.com/Nolenz/WurstMod
 - Atlas sample scenes: https://github.com/H3VR-Modding/AtlasSampleScenes
+- Atlas mapping setup (requirements, then Basics): https://h3vr-modding.github.io/wiki/creating/mapping/atlas/getting_started/1_requirements.html
 - OtherLoader source: https://github.com/devyndamonster/OtherLoader
 - GunGame source: https://github.com/KacperObara/H3VR-GunGame
 - GunGame map wiki source: https://github.com/KacperObara/H3VR-GunGame.wiki

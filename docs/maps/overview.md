@@ -19,6 +19,14 @@ Start with readable player routes, sight lines, and combat lanes. Add gameplay
 objects to spaces that support them, then make collision, navigation, lighting,
 and occlusion agree with the final geometry.
 
+### Atlas starting point
+
+For a new Atlas scene, begin with the official [Atlas getting-started
+requirements](https://h3vr-modding.github.io/wiki/creating/mapping/atlas/getting_started/1_requirements.html):
+an existing MeatKit project with Atlas imported. Continue from its linked
+**Basics** page for scene setup. This handbook adds workflow and validation
+context; Atlas documentation remains the primary setup reference.
+
 | # | Add | Quick rule |
 | --- | --- | --- |
 | 1 | **Map root + rooms** | One root; clear room names |
@@ -57,5 +65,6 @@ rather than merely occupy the scene.
 
 - [Performance + VR test](performance-and-vr-testing.md)
 - [Raw Prometheus notes](../sources/user-provided/2026-07-10-prometheus-map-modding-notes.md)
+- [Atlas getting-started requirements](https://h3vr-modding.github.io/wiki/creating/mapping/atlas/getting_started/1_requirements.html)
 - [Atlas samples](https://github.com/H3VR-Modding/AtlasSampleScenes)
 - [WurstMod](https://github.com/Nolenz/WurstMod)

@@ -17,7 +17,7 @@ to them.
 | Legacy TextMesh Pro | [TextMesh Pro card](external/textmesh-pro-unity-5-6.md) |
 | FTW tutorial search | [FTW card](external/ftw-arms-custom-weapons.md) |
 | OtherLoaderPatched / OLP tools | [OLP source and credit card](external/otherloader-patched.md) |
-| Supply Raid / SRE 1.3.0 | [Supply Raid card](external/supply-raid.md) |
+| Supply Raid owner guidance / SRE 1.3.0 pin | [Supply Raid card](external/supply-raid.md) |
 
 ## Raw upstream docs
 

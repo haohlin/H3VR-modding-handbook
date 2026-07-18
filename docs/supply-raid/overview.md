@@ -19,6 +19,8 @@ test that proves a scene is actually usable in Supply Raid.
 | --- | --- |
 | Supply Raid scene / gameplay layout | [Map authoring](map-authoring.md) |
 | General Unity map work | [H3VR map overview](../maps/overview.md) |
+| Owner's current mapper baseline | [Supply Raid package About / modding section](https://thunderstore.io/c/h3vr/p/Packer/SupplyRaid/) |
+| Additional mapper detail | [Supply Raid Wiki](https://thunderstore.io/c/h3vr/p/Packer/SupplyRaid/wiki/) |
 | Supply Raid source / SDK examples | [Packer Supply Raid 1.3.0](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0) |
 | Supply Raid tool/release links | [Supply Raid source card](../sources/external/supply-raid.md) |
 
@@ -34,6 +36,8 @@ mode test.
 ## Sources and credit
 
 - [Supply Raid map authoring](map-authoring.md)
+- [Official Supply Raid package / mapper baseline](https://thunderstore.io/c/h3vr/p/Packer/SupplyRaid/)
+- [Official Supply Raid Wiki](https://thunderstore.io/c/h3vr/p/Packer/SupplyRaid/wiki/)
 - [Supply Raid 1.3.0 source](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0)
 - [Supply Raid SDK](https://github.com/Packer/H3VR-Supply-Raid/tree/SRE-1.3.0/Supply%20Raid%20SDK)
 - [Source card](../sources/external/supply-raid.md)
